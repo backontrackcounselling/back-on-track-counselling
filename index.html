@@ -12,7 +12,7 @@
   body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #edf6fb; /* Light blue background for calmness */
+    background-color: #fff9e5; /* Pale warm yellow background for overall site */
     color: #243746;
     line-height: 1.6;
   }
@@ -23,21 +23,20 @@
     text-align: center;
   }
 
-  /* Logo styling */
+  /* Logo styling (simple brain with road SVG) */
   .logo {
     width: 80px;
     height: 80px;
     margin: 0 auto 10px;
   }
 
-  /* Main heading */
+  /* Main heading styling */
   header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     margin-bottom: 5px;
   }
 
-  /* Subheading or tagline */
   header p {
     font-size: 1.2rem;
   }
@@ -46,7 +45,7 @@
   nav {
     position: sticky;
     top: 0;
-    background: white;
+    background: #ffffff;
     border-bottom: 1px solid #cfe3ec;
     z-index: 1000;
   }
@@ -75,19 +74,19 @@
     outline: none;
   }
 
-  /* Main container for content sections */
+  /* Main content container */
   main {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
   }
 
-  /* Sections with warm yellow background and borders */
+  /* Sections styling with pale warm yellow background and borders */
   section {
     margin: 70px 0;
     padding: 45px;
-    background: #ffe082; /* Warm yellow */
-    border: 3px solid #ffd54f; /* Slightly darker yellow border */
+    background: #fff9e5; /* Pale warm yellow */
+    border: 3px solid #ffe082; /* Slightly darker warm yellow border */
     border-radius: 14px;
   }
 
@@ -95,7 +94,7 @@
   section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
-    border-bottom: 2px solid #ffd54f;
+    border-bottom: 2px solid #ffe082;
     padding-bottom: 10px;
     margin-bottom: 25px;
     text-align: center;
@@ -108,7 +107,7 @@
     gap: 20px;
   }
 
-  /* Info boxes */
+  /* Info boxes styling */
   .box {
     padding: 20px;
     background: #f6fbfe;
@@ -121,18 +120,17 @@
     color: #355f6d;
   }
 
-  /* Footer styling with logo and copyright info */
+  /* Footer styling with logo and info */
   footer {
     background: #d9edf5;
     padding: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 0.9rem;
   }
   footer p {
-    margin: 10px 20px;
+    margin: 10px;
   }
   .footer-logo {
     width: 60px;
@@ -146,7 +144,6 @@
     }
     footer {
       flex-direction: column;
-      text-align: center;
     }
   }
 </style>
@@ -184,16 +181,16 @@
 
 <main>
 
-<!-- Contact -->
+<!-- Contact Section -->
 <section id="contact">
   <h2>Contact Us</h2>
-  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; justify-content: center;">
-    <div style="flex: 1; min-width: 250px;">
+  <div style="display:flex; flex-wrap:wrap; align-items:center; gap:20px; justify-content:center;">
+    <div style="flex:1; min-width:250px;">
       <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com" style="color:#007BFF;">Janinejlb88@outlook.com</a></p>
       <p><strong>Phone:</strong> 07514 117848</p>
       <p>If you’d like to ask questions or explore support options, please get in touch. We’re here for you!</p>
     </div>
-    <div style="flex: 1; min-width: 150px; text-align: center;">
+    <div style="flex:1; min-width:150px; text-align:center;">
       <img src="images/janine-blake.jpg" alt="Janine Blake" style="max-width:200px; border-radius:10px;">
     </div>
   </div>
@@ -227,15 +224,15 @@
   </form>
 </section>
 
-<!-- Privacy & Confidentiality -->
-<section id="privacy" style="background:#ffe082; border:3px solid #ffd54f; border-radius:14px; padding:45px; margin-top:50px;">
+<!-- Privacy -->
+<section id="privacy" style="background:#fff9e5; border:3px solid #ffe082; border-radius:14px; padding:45px; margin-top:50px;">
   <h2 style="font-family: 'Playfair Display', serif; font-size:2rem; text-align:center;">Privacy & Confidentiality</h2>
   <p style="max-width:800px; margin:auto; font-size:1.2em; line-height:1.5; margin-top:10px;">
     Your sessions are protected under UK law, including the Data Protection Act 2018 and UK GDPR. Information shared is confidential and will only be disclosed when legally required (e.g., harm, abuse, neglect). Records are securely stored, and breaches outside legal bounds are unlawful. Clients are informed of these limits upfront for transparency.
   </p>
 </section>
 
-<!-- About -->
+<!-- About Me -->
 <section id="about">
   <h2>About Me</h2>
   <p>My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>. I am a registered member of the British Association for Counselling and Psychotherapy (MBACP). I offer a warm, non-judgemental, confidential space to explore emotional difficulties at your own pace.</p>
