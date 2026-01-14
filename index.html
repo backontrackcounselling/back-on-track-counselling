@@ -1,304 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Back on Track Counselling</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<title>Back on Track Counselling</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
 
-  <meta name="description" content="Back on Track Counselling offers confidential counselling for anxiety, depression, long-COVID, stroke recovery, and aphasia in a calm, supportive environment.">
+<!-- Basic Styles -->
+<style>
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #edf6fb; /* Light blue background for calmness */
+    color: #243746;
+    line-height: 1.6;
+  }
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
+  /* Header styling */
+  header {
+    background: linear-gradient(rgba(217,237,245,0.95), rgba(217,237,245,0.95)),
+                url("vine.png");
+    background-size: cover;
+    background-position: center;
+    padding: 90px 20px;
+    text-align: center;
+  }
 
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: #edf6fb;
-      color: #243746;
-      line-height: 1.7;
-    }
+  header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
 
-    header {
-      background: linear-gradient(rgba(217,237,245,0.95), rgba(217,237,245,0.95)),
-                  url("vine.png");
-      background-size: cover;
-      background-position: center;
-      padding: 90px 20px;
-      text-align: center;
-      border-bottom: 5px solid #c3dfe9;
-    }
+  header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+  }
 
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
+  /* Navigation styles */
+  nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    border-bottom: 1px solid #cfe3ec;
+    z-index: 1000;
+  }
 
-    header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: auto;
-    }
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    flex-wrap: wrap;
+  }
 
-    nav {
-      position: sticky;
-      top: 0;
-      background: white;
-      border-bottom: 1px solid #cfe3ec;
-      z-index: 1000;
-    }
+  nav a {
+    text-decoration: none;
+    color: #243746;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
 
+  nav a:hover,
+  nav a:focus {
+    background-color: #cfe3ec;
+    outline: none;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  /* Sections styling with warm yellow borders and rounded edges */
+  section {
+    margin: 70px 0;
+    padding: 45px;
+    background: #fff; /* White background for readability */
+    border: 3px solid #ffe082; /* Warm yellow border */
+    border-radius: 14px;
+  }
+
+  section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    border-bottom: 2px solid #ffe082;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  /* Grid styling for support areas */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  /* Info boxes styling */
+  .box {
+    padding: 20px;
+    background: #f6fbfe;
+    border: 1px solid #d6eaf2;
+    border-radius: 10px;
+  }
+  .box h3 {
+    margin-top: 0;
+    font-family: 'Playfair Display', serif;
+    color: #355f6d;
+  }
+
+  /* Footer styling */
+  footer {
+    background: #d9edf5;
+    text-align: center;
+    padding: 30px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+  }
+
+  /* Responsive adjustments */
+  @media(max-width: 640px){
     nav ul {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      list-style: none;
-      padding: 15px;
-      margin: 0;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #243746;
-      font-weight: 600;
-    }
-
-    nav a:hover,
-    nav a:focus-visible {
-      color: #4b8ea5;
-      outline: none;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    section {
-      margin: 70px 20px;
-      padding: 45px;
-      background: white;
-      border-radius: 14px;
-      border: 1px solid #cfe3ec;
-    }
-
-    section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      border-bottom: 2px solid #c3dfe9;
-      padding-bottom: 10px;
-      margin-bottom: 25px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .box {
-      padding: 25px;
-      background: #f6fbfe;
-      border: 1px solid #d6eaf2;
-      border-radius: 10px;
-    }
-
-    .box h3 {
-      margin-top: 0;
-      font-family: 'Playfair Display', serif;
-      color: #355f6d;
-    }
-
-    .contact-layout {
-      display: flex;
-      gap: 40px;
-      flex-wrap: wrap;
+      flex-direction: column;
       align-items: center;
     }
+  }
 
-    .contact-image img {
-      max-width: 320px;
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      display: block;
-    }
-
-    footer {
-      background: #d9edf5;
-      text-align: center;
-      padding: 35px;
-      font-size: 0.9rem;
-      margin-top: 80px;
-    }
-
-    @media (max-width: 640px) {
-      .contact-layout {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  </style>
+  /* Logo styling (inline SVG) */
+  .logo-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .logo-svg {
+    width: 80px;
+    height: 80px;
+  }
+</style>
 </head>
-
 <body>
+
+<!-- Logo (Brain & Road) SVG placeholder -->
+<div class="logo-container">
+  <svg class="logo-svg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+    <!-- Brain shape -->
+    <circle cx="32" cy="20" r="8" fill="#4CAF50"/>
+    <ellipse cx="20" cy="32" rx="8" ry="12" fill="#81C784"/>
+    <ellipse cx="44" cy="32" rx="8" ry="12" fill="#81C784"/>
+    <!-- Road path -->
+    <rect x="0" y="50" width="64" height="8" fill="#555"/>
+    <rect x="28" y="52" width="8" height="4" fill="#fff"/>
+  </svg>
+</div>
 
 <header id="home">
   <h1>Back on Track Counselling</h1>
-  <p>
-    A calm, confidential space where you can feel supported, understood,
-    and gently guided back toward balance and wellbeing.
-  </p>
+  <p>A calm, confidential space where you can feel supported, understood, and gently guided back toward balance and wellbeing.</p>
 </header>
 
+<!-- Navigation -->
 <nav aria-label="Main Navigation">
   <ul>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#self-referral">Self-Referral</a></li>
     <li><a href="#about">About</a></li>
-    <li><a href="#support">Areas of Support</a></li>
-    <li><a href="#therapeutic-support">Support Approaches</a></li>
+    <li><a href="#support">Support</a></li>
+    <li><a href="#therapeutic-support">Therapies</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#privacy">Privacy</a></li>
-
   </ul>
 </nav>
 
 <main>
 
-<!-- Main container for easy navigation -->
-<div style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: auto; padding: 20px;">
-
-  <!-- Contact Us Section -->
-  <section id="contact" style="padding: 20px; background-color: #f9f9f9; margin-bottom: 20px;">
-    <h2 style="font-size: 2em; font-weight: bold; text-align: center;">Contact Us</h2>
-    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
-      <!-- Contact Text -->
-      <div style="flex: 1; min-width: 250px; font-size: 1.2em;">
-        <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com" style="color: #007BFF;">Janinejlb88@outlook.com</a></p>
-        <p><strong>Phone:</strong> 07514 117848</p>
-        <p>If you have questions or want to see if counselling is right for you, get in touch. We're here to help!</p>
-      </div>
-      <!-- Contact Image -->
-      <div style="flex: 1; min-width: 150px; text-align: center;">
-        <img src="images/janine-blake.jpg" alt="Janine Blake" style="max-width: 200px; border-radius: 10px;">
-      </div>
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px; justify-content: center;">
+    <div style="flex: 1; min-width: 250px;">
+      <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com" style="color:#007BFF;">Janinejlb88@outlook.com</a></p>
+      <p><strong>Phone:</strong> 07514 117848</p>
+      <p>If you’d like to ask questions or explore support options, please get in touch. We’re here for you!</p>
     </div>
-  </section>
+    <div style="flex: 1; min-width: 150px; text-align: center;">
+      <img src="images/janine-blake.jpg" alt="Janine Blake" style="max-width:200px; border-radius:10px;">
+    </div>
+  </div>
+</section>
 
-  <!-- Self-Referral Section -->
-  <section id="self-referral" style="padding: 20px; background-color: #fff9e5; margin-bottom: 20px;">
-    <h2 style="font-size: 2em; font-weight: bold; text-align: center;">Self-Referral</h2>
-    <p style="font-size: 1.2em; text-align: center;">If I am unavailable or you prefer to request support directly, fill out the form below. I'll get back to you quickly.</p>
-    <form action="#" method="post" style="max-width: 600px; margin: 20px auto;">
-      <label for="referral-name" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Full Name:</label>
-      <input type="text" id="referral-name" name="referral-name" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
-      
-      <label for="referral-email" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Email Address:</label>
-      <input type="email" id="referral-email" name="referral-email" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
-      
-      <label for="referral-phone" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Phone Number:</label>
-      <input type="tel" id="referral-phone" name="referral-phone" style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
-      
-      <label for="contact-preference" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Preferred Method of Contact:</label>
-      <select id="contact-preference" name="contact-preference" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
-        <option value="">--Please choose an option--</option>
-        <option value="email">Email</option>
-        <option value="phone">Phone</option>
-      </select>
-      
-      <label for="referral-issue" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Briefly describe the issue you need support with:</label>
-      <textarea id="referral-issue" name="referral-issue" rows="4" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
-      
-      <button type="submit" style="margin-top: 20px; padding: 15px 30px; font-size: 1.2em; font-weight: bold; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer;">Submit</button>
-    </form>
-  </section>
+<!-- Self-Referral -->
+<section id="self-referral">
+  <h2>Self-Referral</h2>
+  <p style="text-align:center;">If I’m unavailable or you prefer to request support directly, please fill out the form below. I’ll respond as soon as I can.</p>
+  <form action="#" method="post" style="max-width:600px; margin:auto;">
+    <label for="referral-name"><strong>Full Name:</strong></label>
+    <input type="text" id="referral-name" name="referral-name" required style="width:100%; padding:10px; margin-top:5px; border-radius:5px; border:1px solid #ccc;">
 
-  <!-- Cancel Appointment Section -->
-  <section id="cancel-appointment" style="padding: 20px; background-color: #e0f7fa; margin-bottom: 20px;">
-    <h2 style="font-size: 2em; font-weight: bold; text-align: center;">Cancel or Reschedule Appointment</h2>
-    <p style="font-size: 1.2em; text-align: center;">Need to cancel or change your appointment? Let us know in a friendly way, and we'll assist you.</p>
-    <form action="#" method="post" style="max-width: 600px; margin: 20px auto;">
-      <label for="cancel-name" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Full Name:</label>
-      <input type="text" id="cancel-name" name="cancel-name" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
-      
-      <label for="cancel-email" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Email Address:</label>
-      <input type="email" id="cancel-email" name="cancel-email" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
-      
-      <label for="cancel-phone" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Phone Number:</label>
-      <input type="tel" id="cancel-phone" name="cancel-phone" style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
-      
-      <label for="cancel-reason" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Reason for Cancellation (optional):</label>
-      <textarea id="cancel-reason" name="cancel-reason" rows="3" placeholder="Optional" style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
-      
-      <button type="submit" style="margin-top: 20px; padding: 15px 30px; font-size: 1.2em; font-weight: bold; background-color: #f44336; color: white; border: none; border-radius: 8px; cursor: pointer;">Cancel Appointment</button>
-    </form>
-  </section>
+    <label for="referral-email"><strong>Email:</strong></label>
+    <input type="email" id="referral-email" name="referral-email" required style="width:100%; padding:10px; margin-top:5px; border-radius:5px; border:1px solid #ccc;">
 
+    <label for="referral-phone"><strong>Phone:</strong></label>
+    <input type="tel" id="referral-phone" name="referral-phone" style="width:100%; padding:10px; margin-top:5px; border-radius:5px; border:1px solid #ccc;">
 
+    <label for="contact-preference"><strong>Preferred Contact Method:</strong></label>
+    <select id="contact-preference" name="contact-preference" required style="width:100%; padding:10px; margin-top:5px; border-radius:5px; border:1px solid #ccc;">
+      <option value="">--Please choose--</option>
+      <option value="email">Email</option>
+      <option value="phone">Phone</option>
+    </select>
 
+    <label for="referral-issue"><strong>Description of Issue:</strong></label>
+    <textarea id="referral-issue" name="referral-issue" rows="4" required style="width:100%; padding:10px; margin-top:5px; border-radius:5px; border:1px solid #ccc;"></textarea>
 
+    <button type="submit" style="margin-top:15px; padding:15px 25px; font-size:1.2rem; background:#4CAF50; color:#fff; border:none; border-radius:8px; cursor:pointer;">Submit</button>
+  </form>
+</section>
 
-
-
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    My name is <strong>Janine Blake</strong>, and I am the founder of
-    <strong>Back on Track Counselling</strong>. I am a registered member of the
-    British Association for Counselling and Psychotherapy (MBACP).
-  </p>
-  <p>
-    I offer a warm, non-judgemental and confidential space where individuals can
-    explore emotional difficulties at their own pace.
+<!-- Privacy & Confidentiality -->
+<section id="privacy" style="background:#e0f7fa; border:3px solid #ffe082; border-radius:14px; padding:45px; margin-top:50px;">
+  <h2 style="font-family: 'Playfair Display', serif; font-size:2rem; text-align:center;">Privacy & Confidentiality</h2>
+  <p style="max-width:800px; margin:auto; font-size:1.2em; line-height:1.5; margin-top:10px;">
+    Your sessions are protected under UK law, including the Data Protection Act 2018 and UK GDPR. Information shared is confidential and will only be disclosed when legally required (e.g., harm, abuse, neglect). Records are securely stored, and breaches outside legal bounds are unlawful. Clients are informed of these limits upfront for transparency.
   </p>
 </section>
 
+<!-- About Me -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>. I am a registered member of the British Association for Counselling and Psychotherapy (MBACP). I offer a warm, non-judgemental, confidential space to explore emotional difficulties at your own pace.</p>
+</section>
+
+<!-- Support & Approaches -->
 <section id="support">
   <h2>Areas of Support</h2>
   <div class="grid">
-    <div class="box"><h3>Emotional Wellbeing</h3><p>Anxiety, depression, stress, and low self-esteem.</p></div>
-    <div class="box"><h3>Health-Related Counselling</h3><p>Long-COVID, stroke recovery, and aphasia.</p></div>
-    <div class="box"><h3>Therapeutic Approaches</h3><p>Person-Centred, Solution-Focused, Transactional Analysis.</p></div>
-    <div class="box"><h3>Session Fee</h3><p>£25 per session (50 minutes).</p></div>
+    <div class="box"><h3>Emotional Wellbeing</h3><p>Anxiety, depression, stress, low self-esteem.</p></div>
+    <div class="box"><h3>Health Support</h3><p>Long-COVID, stroke recovery, aphasia.</p></div>
+    <div class="box"><h3>Therapeutic Approaches</h3><p>Person-Centred, Solution-Focused, TA.</p></div>
+    <div class="box"><h3>Session Fee</h3><p>£25 for 50 mins.</p></div>
   </div>
 </section>
 
-<!-- ✅ THERAPEUTIC SUPPORT SECTION NOW PROPERLY PLACED -->
+<!-- Therapeutic Support -->
 <section id="therapeutic-support">
   <h2>Support & Therapeutic Approaches</h2>
-  <p>
-    Everyone experiences emotional difficulties differently. Below is an overview
-    of the areas I support and the therapeutic approaches that may help.
-    Counselling is always tailored to you, your experiences, and your pace.
-  </p>
-
+  <p>Everyone’s experience is unique. I tailor support and therapies like CBT, Person-Centred, and Grounding to suit your needs, working at your pace.</p>
   <div class="grid">
-    <div class="box"><h3>Anxiety</h3><p>Persistent worry, fear, or physical tension.</p><p><strong>Support offered:</strong> Person-Centred, CBT-informed, grounding techniques.</p></div>
-    <div class="box"><h3>Depression & Low Mood</h3><p>Feelings of sadness, fatigue, or disconnection.</p><p><strong>Support offered:</strong> Humanistic and CBT-informed approaches.</p></div>
-    <div class="box"><h3>Stress</h3><p>Emotional overwhelm or burnout.</p><p><strong>Support offered:</strong> Solution-Focused Therapy and regulation strategies.</p></div>
-    <div class="box"><h3>Low Self-Esteem</h3><p>Self-criticism or low confidence.</p><p><strong>Support offered:</strong> Person-Centred Therapy.</p></div>
-    <div class="box"><h3>Grief & Loss</h3><p>Bereavement or major life changes.</p><p><strong>Support offered:</strong> Compassionate, non-judgemental counselling.</p></div>
-    <div class="box"><h3>Neurodiversity</h3><p>Emotional or relational challenges.</p><p><strong>Support offered:</strong> Neuro-affirming counselling.</p></div>
+    <div class="box"><h3>Anxiety</h3><p>Worry, fear, physical tension. Support: Person-Centred, grounding.</p></div>
+    <div class="box"><h3>Depression</h3><p>Sadness, fatigue, disconnection. Support: Humanistic, CBT.</p></div>
+    <div class="box"><h3>Stress</h3><p>Overwhelm, burnout. Support: Solution-focused, regulation strategies.</p></div>
+    <div class="box"><h3>Self-Esteem</h3><p>Confidence issues. Support: Person-Centred.</p></div>
+    <div class="box"><h3>Grief & Loss</h3><p>Bereavement, major change. Support: Compassionate care.</p></div>
   </div>
 </section>
 
+<!-- Experience -->
 <section id="experience">
   <h2>Professional Experience</h2>
-  <p>I have gained valuable experience working with reputable organizations such as target="_blank".<ahref="https://opendooronline.org/ target="_blank">Visithttps://opendooronline.org//</a>
+  <p>I have worked with Open Doors Counselling, Carers Link, and Brain Health, providing empathetic support, guidance, and assessments to diverse clients. These roles have strengthened my skills in mental health, community engagement, and holistic care, reinforcing my commitment to your wellbeing.</p>
 </section>
 
+<!-- How It Works -->
 <section id="process">
   <h2>How Counselling Works</h2>
-  <ol>
+  <ol style="max-width:600px; margin:auto; font-size:1.2em; padding-left:20px;">
     <li>Get in touch</li>
     <li>Arrange a session</li>
     <li>Begin counselling at your pace</li>
@@ -307,8 +279,9 @@
 
 </main>
 
+<!-- Footer -->
 <footer>
-  © All Rights Reserved. Copyright 2026 Back On Track Counselling. BOTC. | MBACP Registered
+  <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
 </footer>
 
 </body>
