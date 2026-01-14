@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
 <style>
-  /* General Body Styles */
+  /* Body styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -17,36 +17,39 @@ body {
   color: #243746;
 }
 
-/* Logo at the top */
+/* Placeholder for top logo - no images now */
 .top-logo {
   display: flex;
   justify-content: center;
   margin-top: 10px;
 }
 .top-logo img {
-  max-width: 100px;
-  height: auto;
+  display: none; /* hide for now */
 }
 
-/* Header with logo and title side-by-side */
+/* Header with title in a friendly rounded box */
 .header-top {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px; /* Space between logo and title */
+  gap: 15px; /* space between optional logo and title */
   margin-top: 20px;
   margin-bottom: 10px;
+  padding: 15px; /* space around the box */
+  background-color: #d0e8f2; /* soft background for header box */
+  border-radius: 20px; /* smooth, friendly rounded edges */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow for depth */
 }
-.logo-img {
-  max-width: 80px; /* Adjust size as needed */
-  height: auto;
-}
+
+/* Title box styling */
 .header-title {
   font-family: 'Anton', sans-serif;
   font-size: 2.5em;
-  margin: 0; /* Remove default margin */
+  margin: 0; /* no extra margin */
   color: #000;
 }
+
+/* Tagline below header */
 .tagline {
   text-align: center;
   font-family: 'Arial', sans-serif;
@@ -54,7 +57,7 @@ body {
   margin-top: 10px;
 }
 
-/* Navigation Styles */
+/* Navigation styles */
 nav {
   display: flex;
   justify-content: center;
@@ -78,18 +81,18 @@ nav a:hover {
   cursor: pointer;
 }
 
-/* Main Content Area */
+/* Main content area */
 main {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
 }
 
-/* Sections with yellow border and background */
+/* Sections with friendly, smooth borders and backgrounds */
 section {
-  border: 4px solid #ffe082; /* Vibrant yellow border */
-  background-color: #fffde7; /* Pale yellow inside */
-  border-radius: 10px;
+  border: 4px solid #ffe082; /* yellow border */
+  background-color: #fffde7; /* pale yellow inside */
+  border-radius: 15px; /* more rounded corners for friendly look */
   padding: 20px;
   margin-bottom: 50px;
 }
@@ -101,7 +104,7 @@ section {
   gap: 15px;
 }
 
-/* Info boxes inside support */
+/* Info boxes in support section */
 .box {
   background: #fffde7;
   border: 1px solid #ffe082;
@@ -126,14 +129,15 @@ section {
   min-width: 250px;
 }
 
-/* Image styling for contact photo */
+/* Contact image placeholder - hidden now */
 .janine-img {
+  display: none; /* hide for now to avoid broken images */
   width: 100px;
   height: auto;
   border-radius: 8px;
 }
 
-/* Contact form styling */
+/* Contact form styles */
 form {
   display: flex;
   flex-direction: column;
@@ -184,6 +188,7 @@ footer {
   flex-wrap: wrap;
 }
 .footer-logo {
+  display: none; /* hide footer logo for now */
   width: 60px;
   height: auto;
   margin-right: 10px;
@@ -192,21 +197,21 @@ footer {
 </head>
 <body>
 
-<!-- Top Logo (Optional) -->
+<!-- Optional Top Logo (hidden now) -->
 <div class="top-logo">
- <img src="logo.png" alt="Back on Track Counselling Logo" />
-  <img src="logo.png" alt="Logo" />
+  <!-- Placeholder for logo image, hidden to avoid blank space -->
+  <!-- <img src="images/logo.png" alt="Logo" /> -->
 </div>
 
-<!-- Header with Logo and Title -->
+<!-- Header with title in a friendly rounded box -->
 <div class="header-top">
-<img src="logo.png" alt="Back on Track Counselling Logo" />
-  <img src="logo.png" alt="Back on Track Counselling Logo" class="logo-img" />
+  <!-- Optional logo: uncomment and add your logo path when ready -->
+  <!-- <img src="images/logo.png" alt="Logo" class="logo-img" /> -->
   <h1 class="header-title">Back on Track Counselling</h1>
 </div>
 <p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
 
-<!-- Navigation Menu -->
+<!-- Navigation -->
 <nav>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
@@ -228,8 +233,8 @@ footer {
       <p><strong>Phone:</strong> 07514 117848</p>
       <p>If you would like to ask questions or explore support options, please get in touch.</p>
     </div>
-    <!-- Replace 'images/janine-blake.jpg' with your contact image path -->
-    <img src="images/janine-blake.jpg" alt="Janine Blake" class="janine-img" />
+    <!-- Contact image placeholder hidden -->
+    <!-- <img src="images/janine-blake.jpg" alt="Janine Blake" class="janine-img" /> -->
   </div>
   <h3 style="margin-top:30px; border-bottom:2px solid #ccc; padding-bottom:5px;">Self Referral</h3>
   <p>Please fill out the form below to request support directly.</p>
@@ -309,8 +314,8 @@ footer {
 <!-- Footer -->
 <footer>
   <div style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap;">
-    <!-- Replace 'logo.png' with your footer logo if needed -->
-    <img src="logo.png" alt="Logo" class="footer-logo" />
+    <!-- Optional footer logo, hidden for now -->
+    <!-- <img src="logo.png" alt="Logo" class="footer-logo" /> -->
     <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
   </div>
 </footer>
