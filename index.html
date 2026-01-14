@@ -6,47 +6,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <style>
- body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #d0e8f2; /
-  color: #243746;
-}
-  /* Header with logo and title */
-.header-container {
-    border: 3px solid #000; /* border around header */
-    background-color: #d0e8f2; /* pale blue background for header area */
-    padding: 10px;
-    text-align: center;
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #a7c7e7; /* Light pale blue background */
+    color: #243746;
   }
 
-.header-logo {
+  /* Logo above header */
+  .top-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .top-logo img {
     max-width: 100px;
     height: auto;
   }
 
-.header-title {
+  /* Header container with border and background */
+  .header-container {
+    border: 4px solid #000;
+    background-color: #d0e8f2; /* Pale blue header background */
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Main header title */
+  .header-title {
     font-size: 3em;
     font-weight: bold;
     color: #000;
-    margin: 10px 0;
-    border: 2px solid #000;
+    border: 3px solid #000;
     display: inline-block;
     padding: 10px 20px;
+    margin-bottom: 10px;
   }
 
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Navigation styles */
+  /* Navigation styles */
 nav {
   display: flex;
   justify-content: center;
-  background-color: #d0e8f2;
   padding: 10px 0;
+  background-color: #d0e8f2;
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
 }
@@ -54,36 +56,35 @@ nav {
 nav a {
   margin: 0 10px;
   padding: 8px 12px;
+  border: 2px solid #000;
+  border-radius: 5px;
   text-decoration: none;
   color: #243746;
-  border: 2px solid #000; /* border around each link */
-  border-radius: 5px;
-  transition: background-color 0.3s, border-color 0.3s;
+  transition: all 0.3s;
 }
-
 nav a:hover {
-  background-color: #b2dfdb; /* light green on hover */
+  background-color: #b2dfdb; /* light green */
   border-color: green;
   cursor: pointer;
 }
 
-/* Main content area */
+/* Main content styles */
 main {
   max-width: 1200px;
   margin: 20px auto;
   padding: 20px;
 }
 
-/* Section styling */
+/* Sections with yellow border and background */
 section {
-  border: 4px solid #ffe082; /* border around sections */
-  background-color: #fffde7; /* pale yellow inside */
+  border: 4px solid #ffe082; /* Vibrant yellow border */
+  background-color: #fffde7; /* Pale yellow inside */
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 50px;
 }
 
-/* Section titles */
+/* Section headers */
 h2 {
   text-align: center;
   font-size: 2em;
@@ -91,45 +92,59 @@ h2 {
   text-decoration: underline;
 }
 
-/* Contact section with contact info and small image */
-.contact-info {
+/* Support grid layout */
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+/* Info boxes inside support */
+.box {
+  background: #fffde7;
+  border: 1px solid #ffe082;
+  padding: 10px;
+  border-radius: 8px;
+}
+.box h3 {
+  margin-top: 0;
+}
+
+/* Contact info and photo */
+.contact-top {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 15px;
   justify-content: center;
+  margin-top: 20px;
 }
-
 .contact-details {
   flex: 1;
   min-width: 250px;
 }
-
-/* Small Janine image */
 .janine-img {
   width: 100px;
   height: auto;
   border-radius: 8px;
 }
 
-/* Contact form styling */
+/* Contact form styles */
 form {
   display: flex;
   flex-direction: column;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 20px auto;
   gap: 10px;
   padding: 10px;
   border: 2px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
 }
-
 label {
   font-weight: bold;
   margin-top: 10px;
 }
-
 input[type="text"],
 input[type="email"],
 input[type="tel"],
@@ -141,7 +156,6 @@ select {
   border-radius: 5px;
   box-sizing: border-box;
 }
-
 button {
   padding: 15px;
   font-size: 1.2em;
@@ -152,29 +166,11 @@ button {
   cursor: pointer;
   margin-top: 15px;
 }
-
 button:hover {
   background-color: #45a049;
 }
 
-/* Support & info boxes grid */
-.support-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-}
-
-.box {
-  background: #fffde7;
-  border: 1px solid #ffe082;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.box h3 {
-  margin-top: 0;
-}
-
+/* Footer styling */
 footer {
   background-color: #d9edf5;
   padding: 20px;
@@ -184,7 +180,6 @@ footer {
   flex-wrap: wrap;
   border-top: 2px solid #000;
 }
-
 .footer-logo {
   width: 60px;
   height: auto;
@@ -194,53 +189,53 @@ footer {
 </head>
 <body>
 
-<!-- Logo above header -->
-<div style="text-align:center; margin-top:10px;">
-  <img src="logo.png" alt="Logo" class="header-logo" style="max-width:100px;">
+<!-- Logo image above header -->
+<div class="top-logo">
+  <img src="logo.png" alt="Logo" />
 </div>
 
-<!-- Header Title with border -->
+<!-- Header with main title -->
 <div class="header-container">
-  <h1 class="header-title">Back on Track Counselling</h1>
+  <div class="header-title">Back on Track Counselling</div>
   <p>A warm, supportive space guiding you back to balance and wellbeing.</p>
 </div>
 
-<!-- Navigation with borders and hover effect -->
+<!-- Navigation -->
 <nav>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
   <a href="#support">Support</a>
-  <a href="#therapeutic-support">Therapies</a>
+  <a href="#therapies">Therapies</a>
   <a href="#experience">Experience</a>
   <a href="#privacy">Privacy</a>
 </nav>
 
 <main>
 
-<!-- Contact Section with small image -->
-<section id="contact" style="border:4px solid #ffe082; background-color:#fffde7; border-radius:10px; padding:20px; margin-bottom:50px;">
-  <h2 style="text-align:center;">Contact Us</h2>
-  <div class="contact-info">
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-top">
     <div class="contact-details">
       <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></p>
       <p><strong>Phone:</strong> 07514 117848</p>
       <p>If you would like to ask questions or explore support options, please get in touch.</p>
     </div>
-    <img src="janine-blake.jpg" alt="Janine Blake" class="janine-img">
+    <img src="janine-blake.jpg" alt="Janine Blake" class="janine-img" />
   </div>
   <h3 style="margin-top:30px; border-bottom:2px solid #ccc; padding-bottom:5px;">Self Referral</h3>
-  <p style="margin-top:10px;">Please fill out the form below to request support directly.</p>
+  <p>Please fill out the form below to request support directly.</p>
   <form action="https://formspree.io/f/xeeeoeqo" method="POST">
     <input type="hidden" name="_subject" value="New Client Support Request" />
 
     <label for="referral-name">Full Name:</label>
-    <input type="text" id="referral-name" name="referral-name" required>
+    <input type="text" id="referral-name" name="referral-name" required />
 
     <label for="referral-email">Email:</label>
-    <input type="email" id="referral-email" name="referral-email" required>
+    <input type="email" id="referral-email" name="referral-email" required />
 
     <label for="referral-phone">Phone:</label>
-    <input type="tel" id="referral-phone" name="referral-phone">
+    <input type="tel" id="referral-phone" name="referral-phone" />
 
     <label for="contact-preference">Preferred Contact Method:</label>
     <select id="contact-preference" name="contact-preference" required>
@@ -257,22 +252,22 @@ footer {
 </section>
 
 <!-- Privacy & Confidentiality -->
-<section id="privacy" style="border:4px solid #ffe082; background-color:#fffde7; border-radius:10px; padding:20px; margin-bottom:50px;">
-  <h2 style="text-align:center;">Privacy & Confidentiality</h2>
+<section id="privacy">
+  <h2>Privacy & Confidentiality</h2>
   <p>Your sessions are protected under UK law, including the Data Protection Act 2018 and UK GDPR. Information shared is confidential and will not be disclosed without your consent, unless legally required.</p>
   <p>Records are kept securely, following professional standards. Breaches outside legal exceptions are unlawful. Clients are informed of these limits upfront, especially minors and vulnerable adults.</p>
   <p>My goal is to provide a safe, confidential environment while respecting your privacy and legal duties to protect life and wellbeing.</p>
 </section>
 
-<!-- About -->
-<section id="about" style="border:4px solid #ffe082; background-color:#fffde7; border-radius:10px; padding:20px; margin-bottom:50px;">
-  <h2 style="text-align:center;">About Me</h2>
+<!-- About Me -->
+<section id="about">
+  <h2>About Me</h2>
   <p>My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>. I am a registered member of the British Association for Counselling and Psychotherapy (MBACP). I offer a warm, non-judgemental, confidential space to explore emotional difficulties at your own pace.</p>
 </section>
 
 <!-- Support & Therapies -->
-<section id="support" style="border:4px solid #ffe082; background-color:#fffde7; border-radius:10px; padding:20px; margin-bottom:50px;">
-  <h2 style="text-align:center;">Support & Therapies</h2>
+<section id="support">
+  <h2>Support & Therapies</h2>
   <div class="support-grid">
     <div class="box">
       <h3>Emotional Wellbeing</h3>
@@ -290,8 +285,8 @@ footer {
 </section>
 
 <!-- How It Works -->
-<section id="experience" style="border:4px solid #ffe082; background-color:#fffde7; border-radius:10px; padding:20px; margin-bottom:50px;">
-  <h2 style="text-align:center;">How Counselling Works</h2>
+<section id="experience">
+  <h2>How Counselling Works</h2>
   <div class="content-box">
     <ol>
       <li>Get in touch</li>
@@ -305,11 +300,10 @@ footer {
 
 <!-- Footer -->
 <footer>
-  <div style="display:flex; align-items:center; justify-content:center; flex-wrap:wrap;">
+  <div style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap;">
     <img src="logo.png" alt="Logo" class="footer-logo" />
     <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
   </div>
 </footer>
-
 </body>
 </html>
