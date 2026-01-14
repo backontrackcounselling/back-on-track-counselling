@@ -174,6 +174,75 @@
 
 <main>
 
+<!-- Main container for easy navigation -->
+<div style="font-family: Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: auto; padding: 20px;">
+
+  <!-- Contact Us Section -->
+  <section id="contact" style="padding: 20px; background-color: #f9f9f9; margin-bottom: 20px;">
+    <h2 style="font-size: 2em; font-weight: bold; text-align: center;">Contact Us</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
+      <!-- Contact Text -->
+      <div style="flex: 1; min-width: 250px; font-size: 1.2em;">
+        <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com" style="color: #007BFF;">Janinejlb88@outlook.com</a></p>
+        <p><strong>Phone:</strong> 07514 117848</p>
+        <p>If you have questions or want to see if counselling is right for you, get in touch. We're here to help!</p>
+      </div>
+      <!-- Contact Image -->
+      <div style="flex: 1; min-width: 150px; text-align: center;">
+        <img src="images/janine-blake.jpg" alt="Janine Blake" style="max-width: 200px; border-radius: 10px;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Self-Referral Section -->
+  <section id="self-referral" style="padding: 20px; background-color: #fff9e5; margin-bottom: 20px;">
+    <h2 style="font-size: 2em; font-weight: bold; text-align: center;">Self-Referral</h2>
+    <p style="font-size: 1.2em; text-align: center;">If I am unavailable or you prefer to request support directly, fill out the form below. I'll get back to you quickly.</p>
+    <form action="#" method="post" style="max-width: 600px; margin: 20px auto;">
+      <label for="referral-name" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Full Name:</label>
+      <input type="text" id="referral-name" name="referral-name" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+      
+      <label for="referral-email" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Email Address:</label>
+      <input type="email" id="referral-email" name="referral-email" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+      
+      <label for="referral-phone" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Phone Number:</label>
+      <input type="tel" id="referral-phone" name="referral-phone" style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+      
+      <label for="contact-preference" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Preferred Method of Contact:</label>
+      <select id="contact-preference" name="contact-preference" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+        <option value="">--Please choose an option--</option>
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+      </select>
+      
+      <label for="referral-issue" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Briefly describe the issue you need support with:</label>
+      <textarea id="referral-issue" name="referral-issue" rows="4" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+      
+      <button type="submit" style="margin-top: 20px; padding: 15px 30px; font-size: 1.2em; font-weight: bold; background-color: #4CAF50; color: white; border: none; border-radius: 8px; cursor: pointer;">Submit</button>
+    </form>
+  </section>
+
+  <!-- Cancel Appointment Section -->
+  <section id="cancel-appointment" style="padding: 20px; background-color: #e0f7fa; margin-bottom: 20px;">
+    <h2 style="font-size: 2em; font-weight: bold; text-align: center;">Cancel or Reschedule Appointment</h2>
+    <p style="font-size: 1.2em; text-align: center;">Need to cancel or change your appointment? Let us know in a friendly way, and we'll assist you.</p>
+    <form action="#" method="post" style="max-width: 600px; margin: 20px auto;">
+      <label for="cancel-name" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Full Name:</label>
+      <input type="text" id="cancel-name" name="cancel-name" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+      
+      <label for="cancel-email" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Email Address:</label>
+      <input type="email" id="cancel-email" name="cancel-email" required style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+      
+      <label for="cancel-phone" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Phone Number:</label>
+      <input type="tel" id="cancel-phone" name="cancel-phone" style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;">
+      
+      <label for="cancel-reason" style="display: block; font-weight: bold; font-size: 1.2em; margin-top: 10px;">Reason for Cancellation (optional):</label>
+      <textarea id="cancel-reason" name="cancel-reason" rows="3" placeholder="Optional" style="width: 100%; padding: 10px; font-size: 1em; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+      
+      <button type="submit" style="margin-top: 20px; padding: 15px 30px; font-size: 1.2em; font-weight: bold; background-color: #f44336; color: white; border: none; border-radius: 8px; cursor: pointer;">Cancel Appointment</button>
+    </form>
+  </section>
+
 
 
 
