@@ -12,7 +12,7 @@
   body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #fffde7; /* Very pale warm yellow background */
+    background-color: #d0e8f2; /* Pale blue background for overall site */
     color: #243746;
     line-height: 1.6;
   }
@@ -85,7 +85,7 @@
   section {
     margin: 70px 0;
     padding: 45px;
-    background: #fffde7;
+    background: #fffde7; /* Pale yellow for content boxes */
     border: 3px solid #ffe082;
     border-radius: 14px;
   }
@@ -107,18 +107,20 @@
     gap: 20px;
   }
 
-  /* Info boxes styling */
+  /* Info boxes styling with text in pale yellow */
   .box {
     padding: 20px;
-    background: #f6fbfe;
+    background: #f6fbfe; /* Light blueish for contrast, optional */
     border: 1px solid #d6eaf2;
     border-radius: 10px;
+    color: #555; /* Dark text inside boxes for readability */
   }
 
+  /* Heading inside boxes */
   .box h3 {
     margin-top: 0;
     font-family: 'Playfair Display', serif;
-    color: #355f6d;
+    color: #355f6d; /* Darker for headings */
   }
 
   /* Footer styles including logo and info */
@@ -140,7 +142,7 @@
     height: 60px;
   }
 
-  /* Responsive Adjustments */
+  /* Responsive adjustments */
   @media(max-width: 640px){
     nav ul {
       flex-direction: column;
@@ -190,7 +192,7 @@
   </div>
 </section>
 
-<!-- Self-Referral Section -->
+<!-- Self-Referral -->
 <section id="self-referral">
   <h2>Self-Referral</h2>
   <p style="text-align:center;">If I’m unavailable or you prefer to request support directly, please fill out the form below. I’ll respond as soon as I can.</p>
