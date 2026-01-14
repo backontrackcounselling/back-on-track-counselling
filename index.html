@@ -201,10 +201,38 @@ footer {
 </div>
 
 <!-- Header with big title -->
-<div class="header-container">
-  <div class="header-title">Back on Track Counselling</div>
-  <p>A warm, supportive space guiding you back to balance and wellbeing.</p>
+<div class="header-top">
+  <img src="images/logo.png" alt="Back on Track Counselling Logo" class="logo-img" />
+  .header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* space between logo and title */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.logo-img {
+  max-width: 80px; /* size of your logo, adjust as needed */
+  height: auto;
+}
+
+.header-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5em;
+  margin: 0; /* remove default margin */
+  color: #000; /* black color for the title */
+}
+
+.tagline {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+  <h1 class="header-title">Back on Track Counselling</h1>
 </div>
+<p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
 
 <!-- Navigation -->
 <nav>
