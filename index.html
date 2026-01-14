@@ -9,82 +9,52 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
 
 <style>
-  .header-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px; /* space between logo and title */
-  margin-top: 20px;
-  margin-bottom: 10px;
+  /* General Body Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #a7c7e7; /* Light pale blue background */
+  color: #243746;
 }
 
-.logo-img {
-  max-width: 80px; /* size of your logo, adjust as needed */
+/* Logo at the top */
+.top-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.top-logo img {
+  max-width: 100px;
   height: auto;
 }
 
+/* Header with logo and title side-by-side */
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px; /* Space between logo and title */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.logo-img {
+  max-width: 80px; /* Adjust size as needed */
+  height: auto;
+}
 .header-title {
   font-family: 'Anton', sans-serif;
   font-size: 2.5em;
-  margin: 0; /* remove default margin */
-  color: #000; /* black color for the title */
+  margin: 0; /* Remove default margin */
+  color: #000;
 }
-
 .tagline {
   text-align: center;
   font-family: 'Arial', sans-serif;
   font-size: 1.2em;
   margin-top: 10px;
 }
-  body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #a7c7e7; /* Light pale blue background */
-    color: #243746;
-  }
 
-  /* Logo above header */
-  .top-logo {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  .top-logo img {
-    max-width: 100px;
-    height: auto;
-  }
-
-  /* Header container with border and background */
-  .header-container {
-    border: 4px solid #000;
-    background-color: #d0e8f2; /* Pale blue header background */
-    padding: 10px;
-    text-align: center;
-  }
-
-  /* Main header title with Anton font, border with yellow gold around sides */
-  .header-title {
-    font-family: 'Anton', sans-serif;
-    font-size: 3em;
-    font-weight: normal;
-    color: #000;
-    border-left: 4px solid #FFD700; /* Gold border on sides */
-    border-right: 4px solid #FFD700;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-
-  /* Heading styles with Anton font */
-h2 {
-  font-family: 'Anton', sans-serif;
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 15px;
-  /* Optional: add border or other styles here if desired */
-}
-
-/* Navigation styles */
+/* Navigation Styles */
 nav {
   display: flex;
   justify-content: center;
@@ -93,7 +63,6 @@ nav {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
 }
-
 nav a {
   margin: 0 10px;
   padding: 8px 12px;
@@ -104,12 +73,12 @@ nav a {
   transition: all 0.3s;
 }
 nav a:hover {
-  background-color: #b2dfdb; /* light green */
+  background-color: #b2dfdb;
   border-color: green;
   cursor: pointer;
 }
 
-/* Main content styles */
+/* Main Content Area */
 main {
   max-width: 1200px;
   margin: 20px auto;
@@ -143,7 +112,7 @@ section {
   margin-top: 0;
 }
 
-/* Contact info and photo */
+/* Contact section styling */
 .contact-top {
   display: flex;
   flex-wrap: wrap;
@@ -156,13 +125,15 @@ section {
   flex: 1;
   min-width: 250px;
 }
+
+/* Image styling for contact photo */
 .janine-img {
   width: 100px;
   height: auto;
   border-radius: 8px;
 }
 
-/* Contact form styles */
+/* Contact form styling */
 form {
   display: flex;
   flex-direction: column;
@@ -211,7 +182,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border-top: 2px solid #000;
 }
 .footer-logo {
   width: 60px;
@@ -222,19 +192,21 @@ footer {
 </head>
 <body>
 
-<!-- Logo above header -->
+<!-- Top Logo (Optional) -->
 <div class="top-logo">
-  <img src="logo.png" alt="Logo" />
+  <!-- Replace 'logo.png' with your actual logo image path -->
+  <img src="images/logo.png" alt="Logo" />
 </div>
 
-<!-- Header with big title -->
+<!-- Header with Logo and Title -->
 <div class="header-top">
+  <!-- Replace 'images/logo.png' with your logo image path -->
   <img src="images/logo.png" alt="Back on Track Counselling Logo" class="logo-img" />
   <h1 class="header-title">Back on Track Counselling</h1>
 </div>
 <p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
 
-<!-- Navigation -->
+<!-- Navigation Menu -->
 <nav>
   <a href="#contact">Contact</a>
   <a href="#about">About</a>
@@ -244,6 +216,7 @@ footer {
   <a href="#privacy">Privacy</a>
 </nav>
 
+<!-- Main Content -->
 <main>
 
 <!-- Contact Section -->
@@ -255,6 +228,7 @@ footer {
       <p><strong>Phone:</strong> 07514 117848</p>
       <p>If you would like to ask questions or explore support options, please get in touch.</p>
     </div>
+    <!-- Replace 'images/janine-blake.jpg' with your contact image path -->
     <img src="images/janine-blake.jpg" alt="Janine Blake" class="janine-img" />
   </div>
   <h3 style="margin-top:30px; border-bottom:2px solid #ccc; padding-bottom:5px;">Self Referral</h3>
@@ -335,6 +309,7 @@ footer {
 <!-- Footer -->
 <footer>
   <div style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap;">
+    <!-- Replace 'logo.png' with your footer logo if needed -->
     <img src="logo.png" alt="Logo" class="footer-logo" />
     <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
   </div>
