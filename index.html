@@ -5,6 +5,9 @@
 <title>Back on Track Counselling</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<!-- Include Anton font -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
 <style>
   body {
     margin: 0;
@@ -32,18 +35,29 @@
     text-align: center;
   }
 
-  /* Main header title */
+  /* Main header title with Anton font, border with yellow gold around sides */
   .header-title {
+    font-family: 'Anton', sans-serif;
     font-size: 3em;
-    font-weight: bold;
+    font-weight: normal;
     color: #000;
-    border: 3px solid #000;
-    display: inline-block;
+    border-left: 4px solid #FFD700; /* Gold border on sides */
+    border-right: 4px solid #FFD700;
     padding: 10px 20px;
+    display: inline-block;
     margin-bottom: 10px;
   }
 
-  /* Navigation styles */
+  /* Heading styles with Anton font */
+h2 {
+  font-family: 'Anton', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 15px;
+  /* Optional: add border or other styles here if desired */
+}
+
+/* Navigation styles */
 nav {
   display: flex;
   justify-content: center;
@@ -82,14 +96,6 @@ section {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 50px;
-}
-
-/* Section headers */
-h2 {
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 15px;
-  text-decoration: underline;
 }
 
 /* Support grid layout */
@@ -189,12 +195,12 @@ footer {
 </head>
 <body>
 
-<!-- Logo image above header -->
+<!-- Logo above header -->
 <div class="top-logo">
   <img src="logo.png" alt="Logo" />
 </div>
 
-<!-- Header with main title -->
+<!-- Header with big title -->
 <div class="header-container">
   <div class="header-title">Back on Track Counselling</div>
   <p>A warm, supportive space guiding you back to balance and wellbeing.</p>
@@ -221,7 +227,7 @@ footer {
       <p><strong>Phone:</strong> 07514 117848</p>
       <p>If you would like to ask questions or explore support options, please get in touch.</p>
     </div>
-<img src="images/janine-blake.jpg" alt="Janine Blake" style="width:50px; height:auto;">
+    <img src="images/janine-blake.jpg" alt="Janine Blake" class="janine-img" />
   </div>
   <h3 style="margin-top:30px; border-bottom:2px solid #ccc; padding-bottom:5px;">Self Referral</h3>
   <p>Please fill out the form below to request support directly.</p>
@@ -305,5 +311,6 @@ footer {
     <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
   </div>
 </footer>
+
 </body>
 </html>
