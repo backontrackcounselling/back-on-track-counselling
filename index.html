@@ -12,7 +12,7 @@
   body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #fff9e5; /* Pale warm yellow background for overall site */
+    background-color: #fffde7; /* Very pale yellow for a soft, calming effect */
     color: #243746;
     line-height: 1.6;
   }
@@ -23,8 +23,8 @@
     text-align: center;
   }
 
-  /* Logo styling (simple brain with road SVG) */
-  .logo {
+  /* Logo styling */
+  .logo-img {
     width: 80px;
     height: 80px;
     margin: 0 auto 10px;
@@ -81,12 +81,12 @@
     padding: 20px;
   }
 
-  /* Sections styling with pale warm yellow background and borders */
+  /* Sections with pale yellow background and borders */
   section {
     margin: 70px 0;
     padding: 45px;
-    background: #fff9e5; /* Pale warm yellow */
-    border: 3px solid #ffe082; /* Slightly darker warm yellow border */
+    background: #fffde7; /* Very pale yellow for soothing look */
+    border: 3px solid #ffe082; /* Slightly darker yellow border */
     border-radius: 14px;
   }
 
@@ -152,16 +152,8 @@
 
 <!-- Top Logo -->
 <header>
-  <!-- Placeholder Logo: Brain with Road SVG -->
-  <svg class="logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-    <!-- Brain shape -->
-    <circle cx="32" cy="20" r="8" fill="#4CAF50"/>
-    <ellipse cx="20" cy="32" rx="8" ry="12" fill="#81C784"/>
-    <ellipse cx="44" cy="32" rx="8" ry="12" fill="#81C784"/>
-    <!-- Road path -->
-    <rect x="0" y="50" width="64" height="8" fill="#555"/>
-    <rect x="28" y="52" width="8" height="4" fill="#fff"/>
-  </svg>
+  <!-- Replace src with your actual logo image URL or path -->
+  <img src="your-logo-path/logo.png" alt="Back on Track Counselling Logo" class="logo-img" />
   <h1>Back on Track Counselling</h1>
   <p>A warm, supportive space guiding you back to balance and wellbeing.</p>
 </header>
@@ -181,7 +173,7 @@
 
 <main>
 
-<!-- Contact Section -->
+<!-- Contact -->
 <section id="contact">
   <h2>Contact Us</h2>
   <div style="display:flex; flex-wrap:wrap; align-items:center; gap:20px; justify-content:center;">
@@ -249,7 +241,7 @@
   </div>
 </section>
 
-<!-- Therapeutic Approaches -->
+<!-- Therapeutic Support -->
 <section id="therapeutic-support">
   <h2>Support & Therapeutic Approaches</h2>
   <p>Everyone’s experience is unique. I tailor support and therapies like CBT, Person-Centred, and Grounding to suit your needs, working at your pace.</p>
@@ -280,18 +272,11 @@
 
 </main>
 
-<!-- Footer with logo and copyright info -->
+<!-- Footer with logo and info -->
 <footer>
   <div style="display:flex; justify-content: space-around; align-items:center; flex-wrap:wrap;">
-    <!-- Logo at bottom -->
-    <svg class="footer-logo" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" style="margin:10px;">
-      <!-- Brain shape with road -->
-      <circle cx="32" cy="20" r="8" fill="#4CAF50"/>
-      <ellipse cx="20" cy="32" rx="8" ry="12" fill="#81C784"/>
-      <ellipse cx="44" cy="32" rx="8" ry="12" fill="#81C784"/>
-      <rect x="0" y="50" width="64" height="8" fill="#555"/>
-      <rect x="28" y="52" width="8" height="4" fill="#fff"/>
-    </svg>
+    <!-- Replace src with your actual logo image path -->
+    <img src="your-logo-path/logo.png" alt="Back on Track Counselling Logo" class="footer-logo" />
     <p style="margin:10px;">&copy; 2026 Back on Track Counselling | MBACP Registered</p>
   </div>
 </footer>
