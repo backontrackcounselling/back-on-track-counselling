@@ -167,10 +167,111 @@
     <li><a href="#process">How Counselling Works</a></li>
     <li><a href="#privacy">Privacy</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#self-referral">Self-Referral</a></li>
   </ul>
 </nav>
 
 <main>
+
+<section id="self-referral">
+  <h2>Self-Referral</h2>
+  <p>
+    If I am unavailable or you wish to request support directly, please complete
+    this form. I will get back to you as soon as possible.
+  </p>
+
+  <form action="#" method="post" class="referral-form">
+    <label for="referral-name">Full Name:</label>
+    <input type="text" id="referral-name" name="referral-name" required>
+
+    <label for="referral-email">Email Address:</label>
+    <input type="email" id="referral-email" name="referral-email" required>
+
+    <label for="referral-phone">Phone Number:</label>
+    <input type="tel" id="referral-phone" name="referral-phone">
+
+    <label for="contact-preference">Preferred Method of Contact:</label>
+    <select id="contact-preference" name="contact-preference" required>
+      <option value="">--Please choose an option--</option>
+      <option value="email">Email</option>
+      <option value="phone">Phone</option>
+    </select>
+
+    <label for="referral-issue">Briefly describe the issue you would like support with:</label>
+    <textarea id="referral-issue" name="referral-issue" rows="4" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+#self-referral {
+  background: #fff5e6; /* Warm pale tones */
+  border: 1px solid #ffd9b3;
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin: 50px 20px;
+}
+
+#self-referral h2 {
+  font-family: 'Playfair Display', serif;
+  color: #c26a40; /* Warm brown accent */
+  border-bottom: 2px solid #ffd9b3;
+  padding-bottom: 10px;
+  margin-bottom: 25px;
+}
+
+#self-referral p {
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.referral-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.referral-form label {
+  font-weight: 600;
+}
+
+.referral-form input,
+.referral-form select,
+.referral-form textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e6bca7;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.referral-form button {
+  background: #ffb366;
+  color: #5b3d26;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.referral-form button:hover {
+  background: #ffa04d;
+}
+
+@media (max-width: 640px) {
+  #self-referral {
+    padding: 30px 20px;
+  }
+}
+
+
+
+
+  
 
 <section id="about">
   <h2>About Me</h2>
