@@ -5,14 +5,14 @@
 <title>Back on Track Counselling</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<!-- Fonts -->
+<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
 
 <style>
   body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-color: #fffde7; /* Very pale yellow for a soft, calming effect */
+    background-color: #fffde7; /* Very pale warm yellow background */
     color: #243746;
     line-height: 1.6;
   }
@@ -23,14 +23,14 @@
     text-align: center;
   }
 
-  /* Logo styling */
+  /* Logo styling (replace src with your image path) */
   .logo-img {
     width: 80px;
     height: 80px;
     margin: 0 auto 10px;
   }
 
-  /* Main heading styling */
+  /* Main title and description */
   header h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
@@ -53,11 +53,11 @@
   nav ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     list-style: none;
     padding: 10px 0;
     margin: 0;
-    flex-wrap: wrap;
   }
 
   nav a {
@@ -74,23 +74,23 @@
     outline: none;
   }
 
-  /* Main content container */
+  /* Main content styles */
   main {
     max-width: 1200px;
     margin: auto;
     padding: 20px;
   }
 
-  /* Sections with pale yellow background and borders */
+  /* Sections styles with pale yellow background and borders */
   section {
     margin: 70px 0;
     padding: 45px;
-    background: #fffde7; /* Very pale yellow for soothing look */
-    border: 3px solid #ffe082; /* Slightly darker yellow border */
+    background: #fffde7;
+    border: 3px solid #ffe082;
     border-radius: 14px;
   }
 
-  /* Section headings */
+  /* Section headers */
   section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 2.2rem;
@@ -114,13 +114,14 @@
     border: 1px solid #d6eaf2;
     border-radius: 10px;
   }
+
   .box h3 {
     margin-top: 0;
     font-family: 'Playfair Display', serif;
     color: #355f6d;
   }
 
-  /* Footer styling with logo and info */
+  /* Footer styles including logo and info */
   footer {
     background: #d9edf5;
     padding: 30px;
@@ -129,15 +130,17 @@
     align-items: center;
     flex-wrap: wrap;
   }
+
   footer p {
     margin: 10px;
   }
+
   .footer-logo {
     width: 60px;
     height: 60px;
   }
 
-  /* Responsive adjustments */
+  /* Responsive Adjustments */
   @media(max-width: 640px){
     nav ul {
       flex-direction: column;
@@ -150,9 +153,8 @@
 </head>
 <body>
 
-<!-- Top Logo -->
+<!-- Logo at the top -->
 <header>
-  <!-- Replace src with your actual logo image URL or path -->
   <img src="your-logo-path/logo.png" alt="Back on Track Counselling Logo" class="logo-img" />
   <h1>Back on Track Counselling</h1>
   <p>A warm, supportive space guiding you back to balance and wellbeing.</p>
@@ -173,7 +175,7 @@
 
 <main>
 
-<!-- Contact -->
+<!-- Contact Section -->
 <section id="contact">
   <h2>Contact Us</h2>
   <div style="display:flex; flex-wrap:wrap; align-items:center; gap:20px; justify-content:center;">
@@ -188,7 +190,7 @@
   </div>
 </section>
 
-<!-- Self-Referral -->
+<!-- Self-Referral Section -->
 <section id="self-referral">
   <h2>Self-Referral</h2>
   <p style="text-align:center;">If I’m unavailable or you prefer to request support directly, please fill out the form below. I’ll respond as soon as I can.</p>
@@ -216,8 +218,8 @@
   </form>
 </section>
 
-<!-- Privacy -->
-<section id="privacy" style="background:#fff9e5; border:3px solid #ffe082; border-radius:14px; padding:45px; margin-top:50px;">
+<!-- Privacy & Confidentiality -->
+<section id="privacy" style="background:#fffde7; border:3px solid #ffe082; border-radius:14px; padding:45px; margin-top:50px;">
   <h2 style="font-family: 'Playfair Display', serif; font-size:2rem; text-align:center;">Privacy & Confidentiality</h2>
   <p style="max-width:800px; margin:auto; font-size:1.2em; line-height:1.5; margin-top:10px;">
     Your sessions are protected under UK law, including the Data Protection Act 2018 and UK GDPR. Information shared is confidential and will only be disclosed when legally required (e.g., harm, abuse, neglect). Records are securely stored, and breaches outside legal bounds are unlawful. Clients are informed of these limits upfront for transparency.
@@ -275,7 +277,6 @@
 <!-- Footer with logo and info -->
 <footer>
   <div style="display:flex; justify-content: space-around; align-items:center; flex-wrap:wrap;">
-    <!-- Replace src with your actual logo image path -->
     <img src="your-logo-path/logo.png" alt="Back on Track Counselling Logo" class="footer-logo" />
     <p style="margin:10px;">&copy; 2026 Back on Track Counselling | MBACP Registered</p>
   </div>
