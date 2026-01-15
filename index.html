@@ -2,287 +2,261 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Back on Track Counselling</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Back on Track Counselling</title>
 
-<!-- Include Anton font -->
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-<!-- Include Lora font -->
-<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+<!-- Google Fonts: Anton for headers, Lora for main text -->
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
 <style>
-  body {
+  /* Reset some default styles */
+  * {
+    box-sizing: border-box;
     margin: 0;
-    font-family: Verdana, sans-serif;
-    background-color: #a7c7e7;
+    padding: 0;
+  }
+
+  /* Body with pale night blue background */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #7a9baf; /* Pale night blue */
     color: #243746;
+    line-height: 1.6;
   }
 
-  .top-logo {
-    display: none;
+  /* Container for all content */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
 
-  .header-top {
+  /* Header styles, centered */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+.header-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+.tagline {
+    font-family: 'Lora', serif;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  /* Navigation styles */
+nav {
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 15px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 15px;
-    background-color: #d0e8f2;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
   }
 
-  .header-title {
-    font-family: 'Anton', sans-serif;
-    font-size: 2.5em;
-    margin: 0;
-    color: #000;
-    text-align: Center;
-    text-align: center; /* fixed to lowercase */
-  }
-
-  .tagline {
-    text-align: center;
-    font-family: Lora, sans-serif;
-    font-family: 'Lora', sans-serif; /* using Lora font now included */
-    font-size: 1.2em;
-    margin-top: 10px;
-  }
-
-  nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    background-color: #d0e8f2;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-  }
-  nav a {
-    margin: 0 10px;
-    padding: 8px 12px;
-    border: 2px solid #000;
-    border-radius: 5px;
+nav a {
+    padding: 10px 15px;
+    border: 3px solid #ffd700; /* Gold/yellow border */
+    border-radius: 12px;
     text-decoration: none;
     color: #243746;
+    font-family: 'Lora', serif;
     transition: all 0.3s;
+    font-weight: bold;
   }
-  nav a:hover {
+
+nav a:hover {
     background-color: #b2dfdb;
     border-color: green;
     cursor: pointer;
   }
 
-  main {
-    max-width: 1200px;
-    margin: 20px auto;
+  /* Main content with background and bordered sections */
+main {
+    background-color: #fffde7; /* Pale yellow inside sections */
     padding: 20px;
+    border-radius: 20px; /* Rounded main container if needed */
   }
 
-  section {
-    border: 4px solid #ffe082;
-    background-color: #fffde7;
-    border-radius: 15px;
+section {
+    border: 3px solid #ffd700; /* Gold/yellow border */
+    border-radius: 20px; /* Smooth rounded corners */
+    background-color: #fffde7; /* Pale yellow background */
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    transition: border-color 0.3s;
   }
 
-  .support-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+section:hover {
+    border-color: green;
   }
 
-  .box {
-    background: #fffde7;
-    border: 1px solid #ffe082;
-    padding: 10px;
-    border-radius: 8px;
-  }
-  .box h3 {
-    margin-top: 0;
+h2 {
+    font-family: 'Anton', sans-serif;
+    font-size: 2em;
+    margin-bottom: 15px;
   }
 
-  .contact-top {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-    justify-content: center;
+h3 {
     margin-top: 20px;
-  }
-  .contact-details {
-    flex: 1;
-    min-width: 250px;
+    margin-bottom: 10px;
   }
 
-  .janine-img {
-    display: none;
+p, ol {
+    font-family: 'Lora', serif;
+    font-size: 1em;
+    margin-bottom: 10px;
   }
 
-  form {
+ul {
+    margin-left: 20px;
+  }
+
+.support-word {
+    cursor: help;
+    border-bottom: 1px dotted #666;
+  }
+
+.support-word:hover {
+    color: #00796b;
+    font-weight: bold;
+  }
+
+form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: 20px auto;
     gap: 10px;
-    padding: 10px;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    background-color: #fff;
+    margin-top: 20px;
   }
-  label {
+
+label {
     font-weight: bold;
-    margin-top: 10px;
   }
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea,
-  select {
-    width: 100%;
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: 'Lora', serif;
+    width: 100%;
   }
-  button {
+
+button {
     padding: 15px;
-    font-size: 1.2em;
-    background-color: #4CAF50;
-    color: #fff;
+    font-size: 1em;
     border: none;
     border-radius: 8px;
+    background-color: #4CAF50;
+    color: #fff;
     cursor: pointer;
-    margin-top: 15px;
+    transition: background-color 0.3s;
   }
-  button:hover {
+
+button:hover {
     background-color: #45a049;
   }
 
-  footer {
-    background-color: #d9edf5;
+footer {
+    margin-top: 40px;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .footer-logo {
-    display: none;
-    width: 60px;
-    height: auto;
-    margin-right: 10px;
+    text-align: center;
+    background-color: #d9edf5;
+    border-top: 2px solid #000;
   }
 </style>
 </head>
 <body>
 
-<h1 class="header-title">Back on Track Counselling</h1>
-<p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
+<div class="container">
 
-<!-- Navigation -->
-<nav>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-  <a href="#support">Support</a>
-  <a href="#therapies">Therapies</a>
-  <a href="#experience">Experience</a>
-  <a href="#privacy">Privacy</a>
-</nav>
+<!-- Header and About Me at the top -->
+<header>
+  <h1 class="header-title">Back on Track Counselling</h1>
+  <p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
+</header>
 
-<!-- Main Content -->
-<main>
 <!-- About Me -->
 <section id="about">
   <h2>About Me</h2>
   <p>My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>. I am a registered member of the British Association for Counselling and Psychotherapy (MBACP). I offer a warm, non-judgemental, confidential space to explore emotional difficulties at your own pace.</p>
 </section>
 
-  <!-- How It Works -->
+<!-- Navigation -->
+<nav>
+  <a href="#about">About</a>
+  <a href="#support">Support & Therapies</a>
+  <a href="#experience">How It Works</a>
+  <a href="#contact">Contact</a>
+  <a href="#privacy">Privacy</a>
+</nav>
+
+<!-- Main Content -->
+<main>
+
+<!-- Support & Therapies -->
+<section id="support">
+  <h2>Support & Therapies</h2>
+  <p>Hover over the words below to learn more:</p>
+  <ul>
+    <li><span class="support-word" title="Support for feelings of worry, nervousness, or fear that can be mild or severe.">anxiety</span></li>
+    <li><span class="support-word" title="A feeling of extreme sadness or loss of interest that affects daily life.">depression</span></li>
+    <li><span class="support-word" title="The body's response to pressure or challenge, which can be short or long-term.">stress</span></li>
+    <li><span class="support-word" title="Lack of confidence or feeling poorly about oneself.">low self-esteem</span></li>
+    <li><span class="support-word" title="Ongoing symptoms after COVID-19 infection.">Long-COVID</span></li>
+    <li><span class="support-word" title="Rehabilitation after a stroke to regain skills and independence.">stroke recovery</span></li>
+    <li><span class="support-word" title="Language disorder affecting speaking, understanding, reading, or writing.">aphasia</span></li>
+  </ul>
+  <h3>Therapies</h3>
+  <ul>
+    <li><span class="support-word" title="Therapy focusing on the individual's experiences and self-growth.">Person-Centred</span></li>
+    <li><span class="support-word" title="Therapy emphasizing solutions rather than problems.">Solution-Focused</span></li>
+    <li><span class="support-word" title="A psychoanalytic theory and therapy method called Transactional Analysis.">Transactional Analysis</span></li>
+  </ul>
+</section>
+
 <!-- How It Works -->
 <section id="experience">
   <h2>How Counselling Works</h2>
-  <div class="content-box">
-    <ol>
-      <li>Get in touch</li>
-      <li>Arrange a session</li>
-      <li>Begin counselling at your pace</li>
-    </ol>
-  </div>
+  <ol>
+    <li>Get in touch</li>
+    <li>Arrange a session</li>
+    <li>Begin counselling at your pace</li>
+  </ol>
 </section>
-  
-<!-- Contact Section -->
+
+<!-- Contact -->
 <section id="contact">
   <h2>Contact Us</h2>
-  <div class="contact-top">
-    <div class="contact-details">
-      <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></p>
-      <p><strong>Phone:</strong> 07514 117848</p>
-      <p>If you would like to ask questions or explore support options, please get in touch.</p>
-    </div>
-  </div>
-  <h3 style="margin-top:30px; border-bottom:2px solid #ccc; padding-bottom:5px;">Self Referral</h3>
+  <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></p>
+  <p><strong>Phone:</strong> 07514 117848</p>
+  <p>If you would like to ask questions or explore support options, please get in touch.</p>
+  <h3>Self Referral</h3>
   <p>Please fill out the form below to request support directly.</p>
   <form action="https://formspree.io/f/xeeeoeqo" method="POST">
-    <input type="hidden" name="_subject" value="New Client Support Request" />
-
     <label for="referral-name">Full Name:</label>
     <input type="text" id="referral-name" name="referral-name" required />
-
     <label for="referral-email">Email:</label>
     <input type="email" id="referral-email" name="referral-email" required />
-
     <label for="referral-phone">Phone:</label>
     <input type="tel" id="referral-phone" name="referral-phone" />
-
     <label for="contact-preference">Preferred Contact Method:</label>
     <select id="contact-preference" name="contact-preference" required>
       <option value="">--Please choose--</option>
       <option value="email">Email</option>
       <option value="phone">Phone</option>
     </select>
-
     <label for="referral-issue">Description of Issue:</label>
     <textarea id="referral-issue" name="referral-issue" rows="4" required></textarea>
-
     <button type="submit">Submit</button>
   </form>
-</section>
-
-<!-- Support & Therapies -->
-<section id="support">
-  <h2>Support & Therapies</h2>
-  <div class="support-grid">
-    <div class="box">
-      <h3>Emotional Wellbeing</h3>
-      <p>
-        Support for 
-        <span title="Anxiety: Feelings of worry, nervousness, or fear that can be mild or severe.">anxiety</span>, 
-        <span title="Depression: Feelings of extreme sadness or loss of interest that affect daily life.">depression</span>, 
-        <span title="Stress: The body's response to pressure or challenge, which can be short or long-term.">stress</span>, 
-        <span title="Low Self-Esteem: Lack of confidence or feeling poorly about oneself.">low self-esteem</span>.
-      </p>
-    </div>
-    <div class="box">
-      <h3>Health Support</h3>
-      <p>
-        <span title="Long-COVID: Ongoing symptoms after COVID-19 infection.">Long-COVID</span>, 
-        <span title="Stroke Recovery: Rehabilitation after a stroke to regain skills and independence.">stroke recovery</span>, 
-        <span title="Aphasia: Language disorder affecting speaking, understanding, reading, or writing.">aphasia</span>.
-      </p>
-    </div>
-    <div class="box">
-      <h3>Therapies</h3>
-      <p>
-        <span title="Person-Centred: Therapy focusing on the individual's unique experiences and self-growth.">Person-Centred</span>, 
-        <span title="Solution-Focused: Therapy that emphasizes finding solutions rather than dwelling on problems.">Solution-Focused</span>, 
-        <span title="Transactional Analysis (TA): A psychoanalytic theory and method of therapy for personal growth.">Transactional Analysis (TA)</span>.
-      </p>
-    </div>
-  </div>
 </section>
 
 <!-- Privacy & Confidentiality -->
@@ -297,9 +271,9 @@
 
 <!-- Footer -->
 <footer>
-  <div style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap;">
-    <p>&copy;All Rights Reserved. Copyright 2026. Back on Track Counselling. | MBACP Registered</p>
-  </div>
+  <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
 </footer>
+
+</div>
 </body>
 </html>
