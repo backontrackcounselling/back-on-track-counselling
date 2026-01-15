@@ -10,157 +10,170 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
-   <style>
+ /* 1. Reset and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+/* 2. Base styles (body) */
+body {
+  font-family: 'Lora', serif; /* Body text in Lora */
+  background-color: #7a9baf;   /* Light blue background */
+  color: #243746;                /* Default text color */
+  line-height: 1.6;
+}
 
-    body {
-      font-family: 'Anton', serif;
-      background-color: #7a9baf;
-      color: #243746;
-      line-height: 1.6;
-    }
+/* 3. Container styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+/* 4. Header styles */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+/* 5. Main header/title styles */
+.header-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 3em;
+  color: #000;
+  margin-bottom: 10px;
+}
 
-    .header-title {
-      font-family: 'Anton', sans-serif;
-      font-size: 3em;
-      color: #000;
-      margin-bottom: 10px;
-    }
+/* 6. Tagline or subtitle */
+.tagline {
+  font-size: 1.2em;
+}
 
-    .tagline {
-      font-size: 1.2em;
-    }
+/* 7. Navigation styles */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
 
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 30px;
-    }
+/* Navigation links with border and colors */
+nav a {
+  padding: 10px 15px;
+  border: 3px solid #ffd700; /* Gold border */
+  border-radius: 12px;
+  text-decoration: none;
+  color: #243746; /* Text color */
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    nav a {
-      padding: 10px 15px;
-      border: 3px solid #ffd700;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #243746;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+/* Hover effect for nav links: turn green */
+nav a:hover {
+  background-color: #b2dfdb; /* Light teal background (optional) */
+  border-color: #ffd700; /* Keep border gold if you want */
+  color: green; /* Text turns green on hover */
+}
 
-    nav a:hover {
-      background-color: #b2dfdb;
-    }
+/* 8. Main content area (background pale yellow) */
+main {
+  background-color: #fffde7; /* Pale yellow background */
+  padding: 30px;
+  border-radius: 20px;
+}
 
-    main {
-      background-color: #fffde7;
-      padding: 30px;
-      border-radius: 20px;
-    }
+/* 9. Sections with gold border and rounded corners */
+section {
+  border: 3px solid #ffd700; /* Gold border */
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 40px;
+  background-color: #fffde7; /* Pale yellow background inside sections */
+}
 
-    section {
-      border: 3px solid #ffd700;
-      border-radius: 20px;
-      padding: 25px;
-      margin-bottom: 40px;
-      background-color: #fffde7;
-    }
+/* Border color change on hover for sections */
+section:hover {
+  border-color: green;
+}
 
-    section:hover {
-      border-color: green;
-    }
+/* 10. Headings in Anton */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Anton', sans-serif;
+}
 
-    h2 {
-      font-family: 'Anton', sans-serif;
-      font-size: 2em;
-      margin-bottom: 15px;
-    }
+/* Specific styles for section titles (h2) */
+h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
 
-    h3 {
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
+/* 11. Lists */
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
 
-    ul, ol {
-      margin-left: 20px;
-      margin-bottom: 10px;
-    }
+/* 12. Support word inline styling */
+.support-word {
+  cursor: help;
+  border-bottom: 1px dotted #666;
+}
+.support-word:hover {
+  color: #00796b;
+  font-weight: bold;
+}
 
-    .support-word {
-      cursor: help;
-      border-bottom: 1px dotted #666;
-    }
+/* 13. Form styles - inputs in Lora for consistency */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  font-weight: bold;
+}
+input, textarea, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Lora', serif; /* Paragraph font in Lora */
+}
 
-    .support-word:hover {
-      color: #00796b;
-      font-weight: bold;
-    }
+/* 14. Buttons styled in green */
+button {
+  padding: 15px;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
 
-    form {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
+/* 15. Price styling */
+.price {
+  font-family: 'Anton', sans-serif;
+  font-size: 1.5em;
+  display: inline-block;
+  margin-top: 10px;
+}
 
-    label {
-      font-weight: bold;
-    }
-
-    input, textarea, select {
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-family: 'Lora', serif;
-    }
-
-    button {
-      padding: 15px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-
-    .price {
-      font-family: 'Anton', sans-serif;
-      font-size: 1.5em;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      text-align: center;
-      background-color: #d9edf5;
-      border-top: 2px solid #000;
-    }
-  </style>
-</head>
+/* 16. Footer styles */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #d9edf5; /* Light blue for footer */
+  border-top: 2px solid #000;
+}
 
 <div class="container">
   
