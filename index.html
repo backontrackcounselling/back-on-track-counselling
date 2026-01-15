@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Back on Track Counselling</title>
 
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
   <style>
-    /* Reset default styles */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -16,299 +16,248 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background-color: #7a9baf; /* Pale blue background */
+      font-family: 'Lora', serif;
+      background-color: #7a9baf;
       color: #243746;
       line-height: 1.6;
     }
 
-   .container {
+    .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
     }
 
     header {
-      background-color: yellow;
-      border: 1px solid gold;
-      padding: 10px;
-      display: flex;
-      align-items: center;
-    }
-
-   .logo {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-color: #243746;
-      margin-right: 20px;
-    }
-
-   .tagline {
-      font-family: 'Anton', sans-serif;
-      font-size: 36px;
-      color: black;
-      animation: roll 5s ease-in-out;
-    }
-
-    @keyframes roll {
-      0% {
-        font-size: 24px;
-        color: black;
-      }
-      100% {
-        font-size: 48px;
-        color: #243746;
-      }
-    }
-
-   .about-me {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-      border: 1px solid #243746;
-      border-radius: 10px;
-      background-color: #f7f7f7;
-    }
-
-   .about-me-logo {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      background-color: #243746;
-      margin-left: auto;
-    }
-
-   .support-and-therapies {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-      border: 1px solid #243746;
-      border-radius: 10px;
-      background-color: #f7f7f7;
-      margin-top: 20px;
-    }
-
-   .support-and-therapies div {
-      width: 50%;
       text-align: center;
+      margin-bottom: 30px;
     }
 
-   .support-and-therapies div:hover {
-      background-color: #243746;
-      color: #f7f7f7;
+    .header-title {
+      font-family: 'Anton', sans-serif;
+      font-size: 3em;
+      color: #000;
+      margin-bottom: 10px;
     }
 
-   .support-and-therapies div::after {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      border-bottom: 1px solid #243746;
-      width: 0;
-      height: 0;
+    .tagline {
+      font-size: 1.2em;
     }
 
-   .support-and-therapies div:hover::after {
-      border-bottom: 1px solid #f7f7f7;
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 30px;
     }
 
-   .anxiety {
-      background-color: #ff9800;
+    nav a {
+      padding: 10px 15px;
+      border: 3px solid #ffd700;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #243746;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
-   .anxiety:hover {
-      background-color: #f7f7f7;
+    nav a:hover {
+      background-color: #b2dfdb;
     }
 
-   .anxiety::after {
-      border-bottom-color: #ff9800;
+    main {
+      background-color: #fffde7;
+      padding: 30px;
+      border-radius: 20px;
     }
 
-   .anxiety:hover::after {
-      border-bottom-color: #f7f7f7;
+    section {
+      border: 3px solid #ffd700;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 40px;
+      background-color: #fffde7;
     }
 
-   .depression {
-      background-color: #4caf50;
+    section:hover {
+      border-color: green;
     }
 
-   .depression:hover {
-      background-color: #f7f7f7;
+    h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2em;
+      margin-bottom: 15px;
     }
 
-   .depression::after {
-      border-bottom-color: #4caf50;
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
     }
 
-   .depression:hover::after {
-      border-bottom-color: #f7f7f7;
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 10px;
     }
 
-   .solution-focused-therapy {
-      background-color: #03a9f4;
+    .support-word {
+      cursor: help;
+      border-bottom: 1px dotted #666;
     }
 
-   .solution-focused-therapy:hover {
-      background-color: #f7f7f7;
+    .support-word:hover {
+      color: #00796b;
+      font-weight: bold;
     }
 
-   .solution-focused-therapy::after {
-      border-bottom-color: #03a9f4;
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
     }
 
-   .solution-focused-therapy:hover::after {
-      border-bottom-color: #f7f7f7;
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Lora', serif;
+    }
+
+    button {
+      padding: 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .price {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.5em;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background-color: #d9edf5;
+      border-top: 2px solid #000;
     }
   </style>
 </head>
+
 <body>
-  <header>
-    <div class="logo">Logo</div>
-    <h1>Back on Track Counselling</h1>
-    <div class="tagline">
-      We help you get back on track
-    </div>
-  </header>
   <div class="container">
-    <div class="about-me">
-      <h2>About Me</h2>
-      <div class="about-me-logo">Logo</div>
-    </div>
-    <div class="support-and-therapies">
-      <div class="anxiety">
-        <h2>Anxiety</h2>
-        <p>Solution Focused Therapy</p>
-        <div class="solution-focused-therapy">
-          <p>Best for anxiety</p>
-        </div>
-      </div>
-      <div class="depression">
-        <h2>Depression</h2>
-        <p>Cognitive Behavioral Therapy</p>
-        <div class="cognitive-behavioral-therapy">
-          <p>Best for depression</p>
-        </div>
-      </div>
-    </div>
+
+    <header>
+      <h1 class="header-title">Back on Track Counselling</h1>
+      <p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
+    </header>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#support">Support</a>
+      <a href="#experience">How It Works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+
+    <main>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>.
+          I am a registered member of the British Association for Counselling and Psychotherapy (MBACP).
+          I offer a warm, non-judgemental and confidential space to explore emotional difficulties at your own pace.
+        </p>
+      </section>
+
+      <section id="support">
+        <h2>Support & Therapies</h2>
+        <ul>
+          <li><span class="support-word" title="Persistent worry or fear.">Anxiety</span></li>
+          <li><span class="support-word" title="Low mood or loss of interest.">Depression</span></li>
+          <li><span class="support-word" title="Mental or emotional pressure.">Stress</span></li>
+          <li><span class="support-word" title="Lack of confidence or self-worth.">Low self-esteem</span></li>
+          <li><span class="support-word" title="Ongoing symptoms after COVID-19.">Long-COVID</span></li>
+          <li><span class="support-word" title="Recovery following a stroke.">Stroke recovery</span></li>
+          <li><span class="support-word" title="Language and communication difficulties.">Aphasia</span></li>
+        </ul>
+
+        <h3>Therapeutic Approaches</h3>
+        <ul>
+          <li>Person-Centred Therapy</li>
+          <li>Solution-Focused Therapy</li>
+          <li>Transactional Analysis</li>
+        </ul>
+      </section>
+
+      <section id="experience">
+        <h2>How Counselling Works</h2>
+        <ol>
+          <li>Get in touch</li>
+          <li>Arrange a session</li>
+          <li>Begin counselling at your pace</li>
+        </ol>
+      </section>
+
+      <section id="pricing">
+        <h2>Pricing</h2>
+        <p><strong>£25 for a 50-minute session</strong></p>
+        <a class="price" href="#" title="Pay securely via PayPal">£25 – Book Session</a>
+      </section>
+
+      <section id="contact">
+        <h2>Contact & Self Referral</h2>
+        <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></p>
+        <p><strong>Phone:</strong> 07514 117848</p>
+
+        <form action="https://formspree.io/f/xeeeoeqo" method="POST">
+          <label>Full Name</label>
+          <input type="text" name="name" required>
+
+          <label>Email</label>
+          <input type="email" name="email" required>
+
+          <label>Phone</label>
+          <input type="tel" name="phone">
+
+          <label>How can I help?</label>
+          <textarea name="message" rows="4" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="privacy">
+        <h2>Privacy & Confidentiality</h2>
+        <p>
+          All sessions are confidential and compliant with UK GDPR and the Data Protection Act 2018.
+          Information is only shared where legally required to protect life or wellbeing.
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
+    </footer>
+
   </div>
-</body>
-</html>
-
-<!-- Main Content -->
-<main>
-
-<!-- Support & Therapies -->
-<section id="support">
-  <h2>Support & Therapies</h2>
-  <p>Hover over the words below to learn more:</p>
-  <ul>
-    <li><span class="support-word" title="Support for feelings of worry, nervousness, or fear that can be mild or severe.">anxiety</span></li>
-    <li><span class="support-word" title="A feeling of extreme sadness or loss of interest that affects daily life.">depression</span></li>
-    <li><span class="support-word" title="The body's response to pressure or challenge, which can be short or long-term.">stress</span></li>
-    <li><span class="support-word" title="Lack of confidence or feeling poorly about oneself.">low self-esteem</span></li>
-    <li><span class="support-word" title="Ongoing symptoms after COVID-19 infection.">Long-COVID</span></li>
-    <li><span class="support-word" title="Rehabilitation after a stroke to regain skills and independence.">stroke recovery</span></li>
-    <li><span class="support-word" title="Language disorder affecting speaking, understanding, reading, or writing.">aphasia</span></li>
-  </ul>
-  <h3>Therapies</h3>
-  <ul>
-    <li><span class="support-word" title="Therapy focusing on the individual's experiences and self-growth.">Person-Centred</span></li>
-    <li><span class="support-word" title="Therapy emphasizing solutions rather than problems.">Solution-Focused</span></li>
-    <li><span class="support-word" title="A psychoanalytic theory and therapy method called Transactional Analysis.">Transactional Analysis</span></li>
-  </ul>
-</section>
-
-<!-- How It Works -->
-<section id="experience">
-  <h2>How Counselling Works</h2>
-  <ol>
-    <li>Get in touch</li>
-    <li>Arrange a session</li>
-    <li>Begin counselling at your pace</li>
-  </ol>
-</section>
-
-   </div>
-  <h3 style="margin-top:30px; border-bottom:2px solid #ccc; padding-bottom:5px;">Self Referral</h3>
-  <p>Please fill out the form below to request support directly.</p>
-  <form action="https://formspree.io/f/xeeeoeqo" method="POST">
-    <input type="hidden" name="_subject" value="New Client Support Request" />
-
-    <label for="referral-name">Full Name:</label>
-    <input type="text" id="referral-name" name="referral-name" required />
-
-    <label for="referral-email">Email:</label>
-    <input type="email" id="referral-email" name="referral-email" required />
-
-    <label for="referral-phone">Phone:</label>
-    <input type="tel" id="referral-phone" name="referral-phone" />
-
-    <label for="contact-preference">Preferred Contact Method:</label>
-    <select id="contact-preference" name="contact-preference" required>
-      <option value="">--Please choose--</option>
-      <option value="email">Email</option>
-      <option value="phone">Phone</option>
-    </select>
-
-    <label for="referral-issue">Description of Issue:</label>
-    <textarea id="referral-issue" name="referral-issue" rows="4" required></textarea>
-
-    <button type="submit">Submit</button>
-  </form>
-</section>
-
-<!-- Pricing & Self Referral -->
-<section id="pricing">
-  <h2>Pricing & Support</h2>
-  <p>Our sessions are priced at <strong>£25 for 50 minutes</strong>. This is highly competitive compared to typical rates of £40-£60 charged by other qualified counsellors in the North West. We are committed to accessible, professional care at an affordable rate.</p>
-  <p>Hover over the price below to pay securely via PayPal:</p>
-  <a class="price" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_BUTTON_ID" target="_blank" title="Click to pay £25 for your session">£25 for 50 mins</a>
-  <h3>Self Referral Form</h3>
-  <p>Complete the form below to request support and book your session:</p>
-  <form action="https://formspree.io/f/xeeeoeqo" method="POST">
-    <label for="referral-name">Full Name:</label>
-    <input type="text" id="referral-name" name="referral-name" required />
-
-    <label for="referral-email">Email:</label>
-    <input type="email" id="referral-email" name="referral-email" required />
-
-    <label for="referral-phone">Phone:</label>
-    <input type="tel" id="referral-phone" name="referral-phone" />
-
-    <label for="referral-issue">Brief description of your issue or support request:</label>
-    <textarea id="referral-issue" name="referral-issue" rows="4" required></textarea>
-
-    <button type="submit">Submit Support Request</button>
-  </form>
-</section>
-
-<!-- Contact & Cancellation & Questions -->
-<section id="contact-support">
-  <h2>Contact & Support</h2>
-  <p>If you need to cancel or reschedule, or if you have questions, contact me directly:</p>
-  <ul>
-    <li><strong>Call:</strong> 07514 117848</li>
-    <li><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></li>
-  </ul>
-  <p>Please notify at least 24 hours in advance for cancellations to avoid charges or inconvenience.</p>
-</section>
-
-<!-- Privacy & Confidentiality -->
-<section id="privacy">
-  <h2>Privacy & Confidentiality</h2>
-  <p>Your sessions are protected under UK law, including the Data Protection Act 2018 and UK GDPR. Your information remains confidential unless legally required to disclose.</p>
-  <p>Records are stored securely, following strict professional standards. You will be informed of our confidentiality policy upfront.</p>
-</section>
-
-</main>
-
-<!-- Footer -->
-<footer>
-  <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
-</footer>
-
-</div>
 </body>
 </html>
