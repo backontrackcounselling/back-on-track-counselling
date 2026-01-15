@@ -9,32 +9,39 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
   <style>
-    /* Style for the fixed price special offer section */
+/* Fixed price banner at the top spanning full width */
 .fixed-price-section {
-  background-color: #ffd700; /* Gold/yellow background */
-  border: 3px solid #000; /* Black border for emphasis */
-  border-radius: 20px;
-  padding: 30px;
-  margin-bottom: 40px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  text-align: center;
+  position: fixed;             /* Fix it at the top of the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;                 /* Span full width */
+  height: auto;                /* Let content decide height or set a fixed height if preferred */
+  background-color: #ffd700;   /* Gold background */
+  border: 1px solid #000;      /* Thin black border */
+  border-radius: 0;            /* No radius to make it flush with edges */
+  padding: 8px 20px;           /* Small padding to keep it compact */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  display: flex;               /* Flex layout for content */
+  align-items: center;         /* Vertically center the text */
+  justify-content: center;     /* Center the text horizontally or use space-between for spread out */
+  z-index: 9999;               /* Make sure it's on top of everything else */
 }
 
 .fixed-price-section h2 {
   font-family: 'Anton', sans-serif;
-  font-size: 2.5em;
-  margin-bottom: 15px;
+  font-size: 1.2em;            /* Smaller size to fit in a thin bar */
+  margin: 0;                   /* Remove default margin */
   color: #243746;
 }
 
 .fixed-price-section p {
-  font-size: 1.3em;
-  margin-bottom: 20px;
+  font-size: 1em;
+  margin: 0 0 0 10px;          /* Slight margin if needed */
   color: #243746;
 }
 
 .fixed-price-section .highlight {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: bold;
 }
     * {
@@ -189,7 +196,11 @@
 
 <body>
   <div class="container">
-
+ <section class="fixed-price-section">
+  <h2>Special Offer: Only £25 per Session!</h2>
+  <p>A 50-minute session at an unbeatable price — just £25! Perfect for those seeking affordable help in the North West region or worldwide. I understand how difficult it can be to access support, and this low fixed price reflects my commitment to making therapy accessible for everyone.</p>
+  <p class="highlight">I've studied counselling for over 4 years, and I know how hard it is to get help through traditional services, which can take time. Sometimes, you need instant support — that's why I offer this affordable, fixed rate to provide quick and accessible help when you need it most.</p>
+</section>
     <header>
       <h1 class="header-title">Back on Track Counselling</h1>
       <p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
@@ -214,12 +225,6 @@ At Back on Track Counselling, my aim is to help you feel heard, supported, and e
         </p>
       </section>
       
-      <section class="fixed-price-section">
-  <h2>Special Offer: Only £25 per Session!</h2>
-  <p>A 50-minute session at an unbeatable price — just £25! Perfect for those seeking affordable help in the North West region or worldwide. I understand how difficult it can be to access support, and this low fixed price reflects my commitment to making therapy accessible for everyone.</p>
-  <p class="highlight">I've studied counselling for over 4 years, and I know how hard it is to get help through traditional services, which can take time. Sometimes, you need instant support — that's why I offer this affordable, fixed rate to provide quick and accessible help when you need it most.</p>
-</section>
-
             <section id="contact">
         <h2>Contact & Self Referral</h2>
         <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></p>
