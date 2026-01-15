@@ -9,40 +9,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
   <style>
-/* Fixed price banner at the top spanning full width */
+/* Style for the pricing box below the header */
 .fixed-price-section {
-  position: fixed;             /* Fix it at the top of the viewport */
-  top: 0;
-  left: 0;
-  width: 100%;                 /* Span full width */
-  height: auto;                /* Let content decide height or set a fixed height if preferred */
-  background-color: #ffd700;   /* Gold background */
-  border: 1px solid #000;      /* Thin black border */
-  border-radius: 0;            /* No radius to make it flush with edges */
-  padding: 8px 20px;           /* Small padding to keep it compact */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  display: flex;               /* Flex layout for content */
-  align-items: center;         /* Vertically center the text */
-  justify-content: center;     /* Center the text horizontally or use space-between for spread out */
-  z-index: 9999;               /* Make sure it's on top of everything else */
+  width: 100%;                    /* Full width */
+  background-color: #fffde7;      /* Pale yellow background */
+  border: 2px solid #ffd700;      /* Gold border */
+  border-radius: 8px;             /* Slightly rounded corners */
+  padding: 10px 20px;             /* Padding inside the box */
+  margin-top: 20px;               /* Space below header */
+  display: flex;                  /* Flex layout for content */
+  flex-direction: column;         /* Stack items vertically */
+  align-items: center;            /* Center items horizontally */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional subtle shadow */
+  max-width: 100%;                /* Ensure it doesn't overflow */
+  margin-left: auto;              /* Center horizontally if needed */
+  margin-right: auto;
 }
 
 .fixed-price-section h2 {
-  font-family: 'Anton', sans-serif;
-  font-size: 1.2em;            /* Smaller size to fit in a thin bar */
-  margin: 0;                   /* Remove default margin */
-  color: #243746;
+  font-family: 'Anton', sans-serif; /* Title in Anton */
+  font-size: 1.5em;                 /* Size for the title */
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #243746;                   /* Dark text for contrast */
 }
 
 .fixed-price-section p {
-  font-size: 1em;
-  margin: 0 0 0 10px;          /* Slight margin if needed */
-  color: #243746;
+  font-family: 'Lora', serif;       /* Description in Lora */
+  font-size: 1em;                   /* Normal size */
+  margin: 0;
+  color: #243746;                   /* Dark text */
 }
 
 .fixed-price-section .highlight {
-  font-size: 1em;
+  font-family: 'Anton', sans-serif; /* Price in Anton */
+  font-size: 2em;                   /* Larger size for emphasis */
   font-weight: bold;
+  color: #243746;                   /* Dark color for visibility */
 }
     * {
       box-sizing: border-box;
