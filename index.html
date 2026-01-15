@@ -5,188 +5,153 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Back on Track Counselling</title>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
-  <style>
- /* Style for the full-width, thin top banner */
-.fixed-price-banner {
-  width: 100%; /* Full width */
-  background-color: #ffd700; /* Gold/yellow for visibility */
-  border-bottom: 3px solid #000; /* Only bottom border for a sleek look */
-  padding: 10px 0; /* Less vertical padding for a thinner look */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  text-align: center;
-  position: relative;
-  z-index: 999; /* Ensures it stays on top if needed */
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+  /* 1. Reset and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.fixed-price-banner h2 {
+/* 2. Base styles (body) */
+body {
+  font-family: 'Lora', serif; /* Body text uses Lora */
+  background-color: #7a9baf;
+  color: #243746;
+  line-height: 1.6;
+}
+
+/* 3. Layout containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+main {
+  background-color: #fffde7;
+  padding: 30px;
+  border-radius: 20px;
+}
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  text-align: center;
+  background-color: #d9edf5;
+  border-top: 2px solid #000;
+}
+
+/* 4. Typography styles (headings, header titles, etc.) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Anton', sans-serif; /* Headings use Anton */
+}
+.header-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 3em;
+  color: #000;
+  margin-bottom: 10px;
+}
+h2 {
   font-family: 'Anton', sans-serif;
   font-size: 2em;
-  margin-bottom: 5px;
-  color: #243746;
+  margin-bottom: 15px;
 }
 
-.fixed-price-banner p {
-  font-size: 1.2em;
-  margin-bottom: 5px;
+/* 5. Navigation styles */
+nav a {
+  padding: 10px 15px;
+  border: 3px solid #ffd700;
+  border-radius: 12px;
+  text-decoration: none;
   color: #243746;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  background-color: #b2dfdb; /* Hover color remains the same */
 }
 
-.fixed-price-banner .highlight {
-  font-size: 1.1em;
+/* 6. Sections and content blocks */
+section {
+  border: 3px solid #ffd700;
+  border-radius: 20px;
+  padding: 25px;
+  margin-bottom: 40px;
+  background-color: #fffde7;
+}
+section:hover {
+  border-color: green;
+}
+
+/* 7. Lists */
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* 8. Support word inline element */
+.support-word {
+  cursor: help;
+  border-bottom: 1px dotted #666;
+}
+.support-word:hover {
+  color: #00796b;
   font-weight: bold;
 }
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
 
-    body {
-      font-family: 'Lora', serif;
-      background-color: #7a9baf;
-      color: #243746;
-      line-height: 1.6;
-    }
+/* 9. Form styles - use Lora for inputs for consistency */
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+label {
+  font-weight: bold;
+}
+input, textarea, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Lora', serif; /* Inputs use Lora */
+}
 
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-    }
+/* 10. Buttons */
+button {
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #45a049;
+}
 
-    header {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+/* 11. Price style */
+.price {
+  font-family: 'Anton', sans-serif; /* Price uses Anton for emphasis */
+  font-size: 1.5em;
+  display: inline-block;
+  margin-top: 10px;
+}
 
-    .header-title {
-      font-family: 'Anton', sans-serif;
-      font-size: 3em;
-      color: #000;
-      margin-bottom: 10px;
-    }
-
-    .tagline {
-      font-size: 1.2em;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 30px;
-    }
-
-    nav a {
-      padding: 10px 15px;
-      border: 3px solid #ffd700;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #243746;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      background-color: #b2dfdb;
-    }
-
-    main {
-      background-color: #fffde7;
-      padding: 30px;
-      border-radius: 20px;
-    }
-
-    section {
-      border: 3px solid #ffd700;
-      border-radius: 20px;
-      padding: 25px;
-      margin-bottom: 40px;
-      background-color: #fffde7;
-    }
-
-    section:hover {
-      border-color: green;
-    }
-
-    h2 {
-      font-family: 'Anton', sans-serif;
-      font-size: 2em;
-      margin-bottom: 15px;
-    }
-
-    h3 {
-      margin-top: 20px;
-      margin-bottom: 10px;
-    }
-
-    ul, ol {
-      margin-left: 20px;
-      margin-bottom: 10px;
-    }
-
-    .support-word {
-      cursor: help;
-      border-bottom: 1px dotted #666;
-    }
-
-    .support-word:hover {
-      color: #00796b;
-      font-weight: bold;
-    }
-
-    form {
-      margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    label {
-      font-weight: bold;
-    }
-
-    input, textarea, select {
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-family: 'Lora', serif;
-    }
-
-    button {
-      padding: 15px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-
-    .price {
-      font-family: 'Anton', sans-serif;
-      font-size: 1.5em;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      text-align: center;
-      background-color: #d9edf5;
-      border-top: 2px solid #000;
-    }
-  </style>
-</head>
 <div class="container">
   
 <body>
