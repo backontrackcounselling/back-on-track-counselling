@@ -9,30 +9,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
 <style>
-  /* Reset some default styles */
+  /* Reset default styles */
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
 
-  /* Body with pale blue background */
   body {
     font-family: Arial, sans-serif;
-    background-color: #7a9baf; /* Pale night blue */
+    background-color: #7a9baf; /* Pale blue background */
     color: #243746;
     line-height: 1.6;
   }
 
-  /* Container for all content */
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
 
-  /* Header styles, centered */
-header {
+  header {
     text-align: center;
     margin-bottom: 20px;
   }
@@ -50,7 +47,6 @@ header {
     margin-bottom: 20px;
   }
 
-  /* Navigation styles - below header */
 nav {
     display: flex;
     justify-content: center;
@@ -75,7 +71,6 @@ nav a:hover {
     cursor: pointer;
   }
 
-  /* Main content with background and borders */
 main {
     background-color: #fffde7; /* Pale yellow inside sections */
     padding: 20px;
@@ -202,13 +197,13 @@ footer {
   <p>My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>. I am a registered member of the British Association for Counselling and Psychotherapy (MBACP). I offer a warm, non-judgemental, confidential space to explore emotional difficulties at your own pace.</p>
 </section>
 
-<!-- Navigation below About Me -->
+<!-- Navigation -->
 <nav>
   <a href="#about">About</a>
   <a href="#support">Support & Therapies</a>
   <a href="#experience">How It Works</a>
-  <a href="#pricing">Pricing</a>
-  <a href="#contact">Contact</a>
+  <a href="#pricing">Pricing & Support</a>
+  <a href="#contact">Contact & Support</a>
   <a href="#privacy">Privacy</a>
 </nav>
 
@@ -246,40 +241,47 @@ footer {
   </ol>
 </section>
 
-<!-- Pricing -->
+<!-- Pricing & Self Referral -->
 <section id="pricing">
-  <h2>Pricing & Value</h2>
-  <p>Our sessions are priced at <strong>£25 for 50 minutes</strong>. This is highly competitive compared to the typical range of £40-£60 per session charged by other qualified counsellors in the North West. We are committed to providing accessible, professional care without compromising on quality.</p>
+  <h2>Pricing & Support</h2>
+  <p>Our sessions are priced at <strong>£25 for 50 minutes</strong>. This is highly competitive compared to typical rates of £40-£60 charged by other qualified counsellors in the North West. We are committed to accessible, professional care at an affordable rate.</p>
   <p>Hover over the price below to pay securely via PayPal:</p>
   <a class="price" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=YOUR_BUTTON_ID" target="_blank" title="Click to pay £25 for your session">£25 for 50 mins</a>
+  <h3>Self Referral Form</h3>
+  <p>Complete the form below to request support and book your session:</p>
+  <form action="https://formspree.io/f/xeeeoeqo" method="POST">
+    <label for="referral-name">Full Name:</label>
+    <input type="text" id="referral-name" name="referral-name" required />
+
+    <label for="referral-email">Email:</label>
+    <input type="email" id="referral-email" name="referral-email" required />
+
+    <label for="referral-phone">Phone:</label>
+    <input type="tel" id="referral-phone" name="referral-phone" />
+
+    <label for="referral-issue">Brief description of your issue or support request:</label>
+    <textarea id="referral-issue" name="referral-issue" rows="4" required></textarea>
+
+    <button type="submit">Submit Support Request</button>
+  </form>
 </section>
 
-<!-- Contact & Cancellation Info -->
-<section id="contact">
-  <h2>Contact & Cancellation</h2>
-  <p>If you need to cancel or reschedule, please contact me directly:</p>
+<!-- Contact & Cancellation & Questions -->
+<section id="contact-support">
+  <h2>Contact & Support</h2>
+  <p>If you need to cancel or reschedule, or if you have questions, contact me directly:</p>
   <ul>
     <li><strong>Call:</strong> 07514 117848</li>
     <li><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></li>
   </ul>
-  <p>Urgent cancellations or rescheduling requests are best handled by phone. Please notify at least 24 hours in advance to avoid charges or inconvenience.</p>
-</section>
-
-<!-- Contact Us for Questions -->
-<section id="contact-info">
-  <h2>Questions & Support</h2>
-  <p>If you'd like to discuss your needs or need assistance, feel free to call or email:</p>
-  <ul>
-    <li><strong>Call:</strong> 07514 117848</li>
-    <li><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></li>
-  </ul>
+  <p>Please notify at least 24 hours in advance for cancellations to avoid charges or inconvenience.</p>
 </section>
 
 <!-- Privacy & Confidentiality -->
 <section id="privacy">
   <h2>Privacy & Confidentiality</h2>
   <p>Your sessions are protected under UK law, including the Data Protection Act 2018 and UK GDPR. Your information remains confidential unless legally required to disclose.</p>
-  <p>Records are stored securely, with strict adherence to professional standards. You will be informed of our confidentiality policy at the outset.</p>
+  <p>Records are stored securely, following strict professional standards. You will be informed of our confidentiality policy upfront.</p>
 </section>
 
 </main>
