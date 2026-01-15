@@ -7,195 +7,180 @@
 
 <!-- Include Anton font -->
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<!-- Include Lora font -->
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
 <style>
-  /* Body styling */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #a7c7e7; /* Light pale blue background */
-  color: #243746;
-}
+  body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background-color: #a7c7e7;
+    color: #243746;
+  }
 
-/* Placeholder for top logo: no image, just spacing if needed */
-.top-logo {
-  display: none; /* Hidden now to avoid blank space */
-}
+  .top-logo {
+    display: none;
+  }
 
-/* Header with title in a friendly rounded box, centered */
-.header-top {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px; /* space between optional logo and title */
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 15px; /* padding around the header box */
-  background-color: #d0e8f2; /* soft background for header box */
-  border-radius: 20px; /* smooth rounded edges */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow for depth */
-}
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #d0e8f2;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
 
-/* Title styling */
-.header-title {
-  font-family: 'Anton', sans-serif;
-  font-size: 2.5em;
-  margin: 0; /* no margin */
-  color: #000;
-  text-align: center;
+  .header-title {
+    font-family: 'Anton', sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    color: #000;
+    text-align: Center;
+    text-align: center; /* fixed to lowercase */
+  }
 
-/* Tagline below header */
-.tagline {
-  text-align: center;
-  font-family: 'Anton', sans-serif;
-  font-size: 1.2em;
-  margin-top: 10px;
-}
+  .tagline {
+    text-align: center;
+    font-family: Lora, sans-serif;
+    font-family: 'Lora', sans-serif; /* using Lora font now included */
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
 
-/* Navigation styles */
-nav {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0;
-  background-color: #d0e8f2;
-  border-top: 2px solid #000;
-  border-bottom: 2px solid #000;
-}
-nav a {
-  margin: 0 10px;
-  padding: 8px 12px;
-  border: 2px solid #000;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #243746;
-  transition: all 0.3s;
-}
-nav a:hover {
-  background-color: #b2dfdb;
-  border-color: green;
-  cursor: pointer;
-}
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #d0e8f2;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+  }
+  nav a {
+    margin: 0 10px;
+    padding: 8px 12px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #243746;
+    transition: all 0.3s;
+  }
+  nav a:hover {
+    background-color: #b2dfdb;
+    border-color: green;
+    cursor: pointer;
+  }
 
-/* Main content area */
-main {
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-}
+  main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
 
-/* Sections with friendly rounded borders and pleasant background */
-section {
-  border: 4px solid #ffe082; /* yellow border */
-  background-color: #fffde7; /* pale yellow inside */
-  border-radius: 15px; /* smooth rounded corners */
-  padding: 20px;
-  margin-bottom: 50px;
-}
+  section {
+    border: 4px solid #ffe082;
+    background-color: #fffde7;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
 
-/* Support grid layout */
-.support-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-}
+  .support-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+  }
 
-/* Support info boxes */
-.box {
-  background: #fffde7;
-  border: 1px solid #ffe082;
-  padding: 10px;
-  border-radius: 8px;
-}
-.box h3 {
-  margin-top: 0;
-}
+  .box {
+    background: #fffde7;
+    border: 1px solid #ffe082;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .box h3 {
+    margin-top: 0;
+  }
 
-/* Contact section styling */
-.contact-top {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 15px;
-  justify-content: center;
-  margin-top: 20px;
-}
-.contact-details {
-  flex: 1;
-  min-width: 250px;
-}
+  .contact-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .contact-details {
+    flex: 1;
+    min-width: 250px;
+  }
 
-/* Placeholder for contact image: hidden to avoid blank space */
-.janine-img {
-  display: none; /* no image to show */
-  width: 100px;
-  height: auto;
-  border-radius: 8px;
-}
+  .janine-img {
+    display: none;
+  }
 
-/* Contact form styles */
-form {
-  display: flex;
-  flex-direction: column;
-  max-width: 600px;
-  margin: 20px auto;
-  gap: 10px;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 8px;
-  background-color: #fff;
-}
-label {
-  font-weight: bold;
-  margin-top: 10px;
-}
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-button {
-  padding: 15px;
-  font-size: 1.2em;
-  background-color: #4CAF50;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 15px;
-}
-button:hover {
-  background-color: #45a049;
-}
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 20px auto;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
 
-/* Footer styling */
-footer {
-  background-color: #d9edf5;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-/* Footer logo hidden for now */
-.footer-logo {
-  display: none;
-  width: 60px;
-  height: auto;
-  margin-right: 10px;
-}
+  footer {
+    background-color: #d9edf5;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer-logo {
+    display: none;
+    width: 60px;
+    height: auto;
+    margin-right: 10px;
+  }
 </style>
 </head>
 <body>
 
-<!-- Centered Header Title -->
 <h1 class="header-title">Back on Track Counselling</h1>
-
 <p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
 
 <!-- Navigation -->
@@ -210,13 +195,13 @@ footer {
 
 <!-- Main Content -->
 <main>
-
 <!-- About Me -->
 <section id="about">
   <h2>About Me</h2>
   <p>My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>. I am a registered member of the British Association for Counselling and Psychotherapy (MBACP). I offer a warm, non-judgemental, confidential space to explore emotional difficulties at your own pace.</p>
 </section>
 
+  <!-- How It Works -->
 <!-- How It Works -->
 <section id="experience">
   <h2>How Counselling Works</h2>
@@ -228,7 +213,7 @@ footer {
     </ol>
   </div>
 </section>
-
+  
 <!-- Contact Section -->
 <section id="contact">
   <h2>Contact Us</h2>
@@ -273,15 +258,29 @@ footer {
   <div class="support-grid">
     <div class="box">
       <h3>Emotional Wellbeing</h3>
-      <p>Support for anxiety, depression, stress, low self-esteem.</p>
+      <p>
+        Support for 
+        <span title="Anxiety: Feelings of worry, nervousness, or fear that can be mild or severe.">anxiety</span>, 
+        <span title="Depression: Feelings of extreme sadness or loss of interest that affect daily life.">depression</span>, 
+        <span title="Stress: The body's response to pressure or challenge, which can be short or long-term.">stress</span>, 
+        <span title="Low Self-Esteem: Lack of confidence or feeling poorly about oneself.">low self-esteem</span>.
+      </p>
     </div>
     <div class="box">
       <h3>Health Support</h3>
-      <p>Long-COVID, stroke recovery, aphasia.</p>
+      <p>
+        <span title="Long-COVID: Ongoing symptoms after COVID-19 infection.">Long-COVID</span>, 
+        <span title="Stroke Recovery: Rehabilitation after a stroke to regain skills and independence.">stroke recovery</span>, 
+        <span title="Aphasia: Language disorder affecting speaking, understanding, reading, or writing.">aphasia</span>.
+      </p>
     </div>
     <div class="box">
       <h3>Therapies</h3>
-      <p>Person-Centred, Solution-Focused, TA.</p>
+      <p>
+        <span title="Person-Centred: Therapy focusing on the individual's unique experiences and self-growth.">Person-Centred</span>, 
+        <span title="Solution-Focused: Therapy that emphasizes finding solutions rather than dwelling on problems.">Solution-Focused</span>, 
+        <span title="Transactional Analysis (TA): A psychoanalytic theory and method of therapy for personal growth.">Transactional Analysis (TA)</span>.
+      </p>
     </div>
   </div>
 </section>
@@ -299,7 +298,7 @@ footer {
 <!-- Footer -->
 <footer>
   <div style="display:flex; justify-content:center; align-items:center; flex-wrap:wrap;">
-    <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
+    <p>&copy;All Rights Reserved. Copyright 2026. Back on Track Counselling. | MBACP Registered</p>
   </div>
 </footer>
 </body>
