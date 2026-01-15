@@ -1,211 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Back on Track Counselling</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Back on Track Counselling</title>
 
-<!-- Google Fonts: Anton for headers, Lora for main text -->
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
-<style>
-  /* Reset default styles */
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  <style>
+    /* Reset default styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #7a9baf; /* Pale blue background */
-    color: #243746;
-    line-height: 1.6;
-  }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #7a9baf; /* Pale blue background */
+      color: #243746;
+      line-height: 1.6;
+    }
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+   .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-  header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+    header {
+      background-color: yellow;
+      border: 1px solid gold;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
 
-.header-title {
-    font-family: 'Anton', sans-serif;
-    font-size: 3em;
-    margin-bottom: 10px;
-    color: #000;
-  }
+   .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #243746;
+      margin-right: 20px;
+    }
 
-.tagline {
-    font-family: 'Lora', serif;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-  }
+   .tagline {
+      font-family: 'Anton', sans-serif;
+      font-size: 36px;
+      color: black;
+      animation: roll 5s ease-in-out;
+    }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
-  }
+    @keyframes roll {
+      0% {
+        font-size: 24px;
+        color: black;
+      }
+      100% {
+        font-size: 48px;
+        color: #243746;
+      }
+    }
 
-nav a {
-    padding: 10px 15px;
-    border: 3px solid #ffd700; /* Gold/yellow border */
-    border-radius: 12px;
-    text-decoration: none;
-    color: #243746;
-    font-family: 'Lora', serif;
-    transition: all 0.3s;
-    font-weight: bold;
-  }
+   .about-me {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border: 1px solid #243746;
+      border-radius: 10px;
+      background-color: #f7f7f7;
+    }
 
-nav a:hover {
-    background-color: #b2dfdb;
-    border-color: #ffd700; /* Keep border yellow */
-    cursor: pointer;
-  }
+   .about-me-logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #243746;
+      margin-left: auto;
+    }
 
-main {
-    background-color: #fffde7; /* Pale yellow inside sections */
-    padding: 20px;
-    border-radius: 20px; /* Rounded container */
-  }
+   .support-and-therapies {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border: 1px solid #243746;
+      border-radius: 10px;
+      background-color: #f7f7f7;
+      margin-top: 20px;
+    }
 
-section {
-    border: 3px solid #ffd700; /* Yellow border */
-    border-radius: 20px; /* Smoothed edges */
-    background-color: #fffde7; /* Pale yellow background */
-    padding: 20px;
-    margin-bottom: 40px;
-    transition: border-color 0.3s;
-  }
+   .support-and-therapies div {
+      width: 50%;
+      text-align: center;
+    }
 
-section:hover {
-    border-color: green;
-  }
+   .support-and-therapies div:hover {
+      background-color: #243746;
+      color: #f7f7f7;
+    }
 
-h2 {
-    font-family: 'Anton', sans-serif;
-    font-size: 2em;
-    margin-bottom: 15px;
-  }
+   .support-and-therapies div::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-bottom: 1px solid #243746;
+      width: 0;
+      height: 0;
+    }
 
-h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
+   .support-and-therapies div:hover::after {
+      border-bottom: 1px solid #f7f7f7;
+    }
 
-p, ol {
-    font-family: 'Lora', serif;
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
+   .anxiety {
+      background-color: #ff9800;
+    }
 
-ul {
-    margin-left: 20px;
-  }
+   .anxiety:hover {
+      background-color: #f7f7f7;
+    }
 
-.support-word {
-    cursor: help;
-    border-bottom: 1px dotted #666;
-  }
+   .anxiety::after {
+      border-bottom-color: #ff9800;
+    }
 
-.support-word:hover {
-    color: #00796b;
-    font-weight: bold;
-  }
+   .anxiety:hover::after {
+      border-bottom-color: #f7f7f7;
+    }
 
-.price {
-    font-family: 'Anton', sans-serif;
-    font-size: 1.5em;
-    color: #000;
-    margin-top: 10px;
-  }
+   .depression {
+      background-color: #4caf50;
+    }
 
-.price:hover {
-    cursor: pointer;
-    color: #00796b;
-    text-decoration: underline;
-  }
+   .depression:hover {
+      background-color: #f7f7f7;
+    }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-  }
+   .depression::after {
+      border-bottom-color: #4caf50;
+    }
 
-label {
-    font-weight: bold;
-  }
+   .depression:hover::after {
+      border-bottom-color: #f7f7f7;
+    }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-textarea,
-select {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-family: 'Lora', serif;
-    width: 100%;
-  }
+   .solution-focused-therapy {
+      background-color: #03a9f4;
+    }
 
-button {
-    padding: 15px;
-    font-size: 1em;
-    border: none;
-    border-radius: 8px;
-    background-color: #4CAF50;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
+   .solution-focused-therapy:hover {
+      background-color: #f7f7f7;
+    }
 
-button:hover {
-    background-color: #45a049;
-  }
+   .solution-focused-therapy::after {
+      border-bottom-color: #03a9f4;
+    }
 
-footer {
-    margin-top: 40px;
-    padding: 20px;
-    text-align: center;
-    background-color: #d9edf5;
-    border-top: 2px solid #000;
-  }
-</style>
+   .solution-focused-therapy:hover::after {
+      border-bottom-color: #f7f7f7;
+    }
+  </style>
 </head>
 <body>
-
-<div class="container">
-
-<!-- Header -->
-<header>
-  <h1 class="header-title">Back on Track Counselling</h1>
-  <p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
-</header>
-
-<!-- About Me at the top -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>. I am a registered member of the British Association for Counselling and Psychotherapy (MBACP). I offer a warm, non-judgemental, confidential space to explore emotional difficulties at your own pace.</p>
-</section>
-
-<!-- Navigation -->
-<nav>
-  <a href="#about">About</a>
-  <a href="#support">Support & Therapies</a>
-  <a href="#experience">How It Works</a>
-  <a href="#pricing">Pricing & Support</a>
-  <a href="#contact">Contact & Support</a>
-  <a href="#privacy">Privacy</a>
-</nav>
+  <header>
+    <div class="logo">Logo</div>
+    <h1>Back on Track Counselling</h1>
+    <div class="tagline">
+      We help you get back on track
+    </div>
+  </header>
+  <div class="container">
+    <div class="about-me">
+      <h2>About Me</h2>
+      <div class="about-me-logo">Logo</div>
+    </div>
+    <div class="support-and-therapies">
+      <div class="anxiety">
+        <h2>Anxiety</h2>
+        <p>Solution Focused Therapy</p>
+        <div class="solution-focused-therapy">
+          <p>Best for anxiety</p>
+        </div>
+      </div>
+      <div class="depression">
+        <h2>Depression</h2>
+        <p>Cognitive Behavioral Therapy</p>
+        <div class="cognitive-behavioral-therapy">
+          <p>Best for depression</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 
 <!-- Main Content -->
 <main>
