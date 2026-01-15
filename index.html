@@ -5,187 +5,191 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Back on Track Counselling</title>
 
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-
-<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-
- /* 1. Reset and box-sizing */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* 2. Base styles (body) */
-body {
-  font-family: 'Lora', serif; /* Body text in Lora */
-  background-color: #7a9baf;   /* Light blue background */
-  color: #243746;                /* Default text color */
-  line-height: 1.6;
-}
-
-/* 3. Container styles */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* 4. Header styles */
-header {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-/* 5. Main header/title styles */
-.header-title {
-  font-family: 'Anton', sans-serif;
-  font-size: 3em;
-  color: #000;
-  margin-bottom: 10px;
-}
-
-/* 6. Tagline or subtitle */
-.tagline {
-  font-size: 1.2em;
-}
-
-/* 7. Navigation styles */
-nav {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-/* Navigation links with border and colors */
-nav a {
-  padding: 10px 15px;
-  border: 3px solid #ffd700; /* Gold border */
-  border-radius: 12px;
-  text-decoration: none;
-  color: #243746; /* Text color */
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-/* Hover effect for nav links: turn green */
-nav a:hover {
-  background-color: #b2dfdb; /* Light teal background (optional) */
-  border-color: #ffd700; /* Keep border gold if you want */
-  color: green; /* Text turns green on hover */
-}
-
-/* 8. Main content area (background pale yellow) */
-main {
-  background-color: #fffde7; /* Pale yellow background */
+  <style>
+    /* Style for the fixed price special offer section */
+.fixed-price-section {
+  background-color: #ffd700; /* Gold/yellow background */
+  border: 3px solid #000; /* Black border for emphasis */
+  border-radius: 20px;
   padding: 30px;
-  border-radius: 20px;
-}
-
-/* 9. Sections with gold border and rounded corners */
-section {
-  border: 3px solid #ffd700; /* Gold border */
-  border-radius: 20px;
-  padding: 25px;
   margin-bottom: 40px;
-  background-color: #fffde7; /* Pale yellow background inside sections */
-}
-
-/* Border color change on hover for sections */
-section:hover {
-  border-color: green;
-}
-
-/* 10. Headings in Anton */
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Anton', sans-serif;
-}
-
-/* Specific styles for section titles (h2) */
-h2 {
-  font-family: 'Anton', sans-serif;
-  font-size: 2em;
-  margin-bottom: 15px;
-}
-
-/* 11. Lists */
-ul, ol {
-  margin-left: 20px;
-  margin-bottom: 10px;
-}
-
-/* 12. Support word inline styling */
-.support-word {
-  cursor: help;
-  border-bottom: 1px dotted #666;
-}
-.support-word:hover {
-  color: #00796b;
-  font-weight: bold;
-}
-
-/* 13. Form styles - inputs in Lora for consistency */
-form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-label {
-  font-weight: bold;
-}
-input, textarea, select {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-family: 'Lora', serif; /* Paragraph font in Lora */
-}
-
-/* 14. Buttons styled in green */
-button {
-  padding: 15px;
-  background-color: #4CAF50; /* Green background */
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1em;
-  cursor: pointer;
-}
-button:hover {
-  background-color: #45a049; /* Darker green on hover */
-}
-
-/* 15. Price styling */
-.price {
-  font-family: 'Anton', sans-serif;
-  font-size: 1.5em;
-  display: inline-block;
-  margin-top: 10px;
-}
-
-/* 16. Footer styles */
-footer {
-  margin-top: 40px;
-  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   text-align: center;
-  background-color: #d9edf5; /* Light blue for footer */
-  border-top: 2px solid #000;
 }
 
-<div class="container">
-  
+.fixed-price-section h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #243746;
+}
+
+.fixed-price-section p {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #243746;
+}
+
+.fixed-price-section .highlight {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Lora', serif;
+      background-color: #7a9baf;
+      color: #243746;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .header-title {
+      font-family: 'Anton', sans-serif;
+      font-size: 3em;
+      color: #000;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 1.2em;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+
+    nav a {
+      padding: 10px 15px;
+      border: 3px solid #ffd700;
+      border-radius: 12px;
+      text-decoration: none;
+      color: #243746;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #b2dfdb;
+    }
+
+    main {
+      background-color: #fffde7;
+      padding: 30px;
+      border-radius: 20px;
+    }
+
+    section {
+      border: 3px solid #ffd700;
+      border-radius: 20px;
+      padding: 25px;
+      margin-bottom: 40px;
+      background-color: #fffde7;
+    }
+
+    section:hover {
+      border-color: green;
+    }
+
+    h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 2em;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    ul, ol {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+
+    .support-word {
+      cursor: help;
+      border-bottom: 1px dotted #666;
+    }
+
+    .support-word:hover {
+      color: #00796b;
+      font-weight: bold;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, textarea, select {
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-family: 'Lora', serif;
+    }
+
+    button {
+      padding: 15px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .price {
+      font-family: 'Anton', sans-serif;
+      font-size: 1.5em;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      text-align: center;
+      background-color: #d9edf5;
+      border-top: 2px solid #000;
+    }
+  </style>
+</head>
+
 <body>
   <div class="container">
-<!-- Fixed Price Banner -->
-<section class="fixed-price-banner">
-  <h2>Special Offer: Only £25 per Session!</h2>
-  <p>A 50-minute session at an unbeatable price — just £25! Available worldwide and in the North West region. I understand how difficult it can be to access support, so this low fixed price helps you get immediate help when you need it most.</p>
-  <p class="highlight">With over 4 years of studying and understanding the challenges of accessing support, I offer this affordable rate to make therapy accessible for everyone.</p>
-</section>
-    
+
     <header>
       <h1 class="header-title">Back on Track Counselling</h1>
       <p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
@@ -210,6 +214,12 @@ At Back on Track Counselling, my aim is to help you feel heard, supported, and e
         </p>
       </section>
       
+      <section class="fixed-price-section">
+  <h2>Special Offer: Only £25 per Session!</h2>
+  <p>A 50-minute session at an unbeatable price — just £25! Perfect for those seeking affordable help in the North West region or worldwide. I understand how difficult it can be to access support, and this low fixed price reflects my commitment to making therapy accessible for everyone.</p>
+  <p class="highlight">I've studied counselling for over 4 years, and I know how hard it is to get help through traditional services, which can take time. Sometimes, you need instant support — that's why I offer this affordable, fixed rate to provide quick and accessible help when you need it most.</p>
+</section>
+
             <section id="contact">
         <h2>Contact & Self Referral</h2>
         <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></p>
