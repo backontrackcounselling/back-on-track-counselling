@@ -7,6 +7,8 @@
 
 <!-- Include Anton font -->
 <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<!-- Include Lora font -->
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 
 <style>
   /* Body styling */
@@ -22,14 +24,13 @@ body {
   display: none; /* Hidden now to avoid blank space */
 }
 
-/* Header with title in a friendly rounded box */
+/* Header with title in a friendly rounded box, centered */
 .header-top {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px; /* space between optional logo and title */
   margin-top: 20px;
-  margin-bottom: 10px;
   margin-bottom: 20px;
   padding: 15px; /* padding around the header box */
   background-color: #d0e8f2; /* soft background for header box */
@@ -43,12 +44,13 @@ body {
   font-size: 2.5em;
   margin: 0; /* no margin */
   color: #000;
+  text-align: center; /* center the text within header */
 }
 
 /* Tagline below header */
 .tagline {
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Lora', sans-serif; /* using Lora font now included */
   font-size: 1.2em;
   margin-top: 10px;
 }
@@ -194,8 +196,9 @@ footer {
 </head>
 <body>
 
-  <h1 class="header-title">Back on Track Counselling</h1>
-</div>
+<!-- Centered Header Title -->
+<h1 class="header-title">Back on Track Counselling</h1>
+
 <p class="tagline">A warm, supportive space guiding you back to balance and wellbeing.</p>
 
 <!-- Navigation -->
@@ -210,6 +213,24 @@ footer {
 
 <!-- Main Content -->
 <main>
+
+<!-- About Me -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>. I am a registered member of the British Association for Counselling and Psychotherapy (MBACP). I offer a warm, non-judgemental, confidential space to explore emotional difficulties at your own pace.</p>
+</section>
+
+<!-- How It Works -->
+<section id="experience">
+  <h2>How Counselling Works</h2>
+  <div class="content-box">
+    <ol>
+      <li>Get in touch</li>
+      <li>Arrange a session</li>
+      <li>Begin counselling at your pace</li>
+    </ol>
+  </div>
+</section>
 
 <!-- Contact Section -->
 <section id="contact">
@@ -249,20 +270,6 @@ footer {
   </form>
 </section>
 
-<!-- Privacy & Confidentiality -->
-<section id="privacy">
-  <h2>Privacy & Confidentiality</h2>
-  <p>Your sessions are protected under UK law, including the Data Protection Act 2018 and UK GDPR. Information shared is confidential and will not be disclosed without your consent, unless legally required.</p>
-  <p>Records are kept securely, following professional standards. Breaches outside legal exceptions are unlawful. Clients are informed of these limits upfront, especially minors and vulnerable adults.</p>
-  <p>My goal is to provide a safe, confidential environment while respecting your privacy and legal duties to protect life and wellbeing.</p>
-</section>
-
-<!-- About Me -->
-<section id="about">
-  <h2>About Me</h2>
-  <p>My name is <strong>Janine Blake</strong>, founder of <strong>Back on Track Counselling</strong>. I am a registered member of the British Association for Counselling and Psychotherapy (MBACP). I offer a warm, non-judgemental, confidential space to explore emotional difficulties at your own pace.</p>
-</section>
-
 <!-- Support & Therapies -->
 <section id="support">
   <h2>Support & Therapies</h2>
@@ -282,16 +289,12 @@ footer {
   </div>
 </section>
 
-<!-- How It Works -->
-<section id="experience">
-  <h2>How Counselling Works</h2>
-  <div class="content-box">
-    <ol>
-      <li>Get in touch</li>
-      <li>Arrange a session</li>
-      <li>Begin counselling at your pace</li>
-    </ol>
-  </div>
+<!-- Privacy & Confidentiality -->
+<section id="privacy">
+  <h2>Privacy & Confidentiality</h2>
+  <p>Your sessions are protected under UK law, including the Data Protection Act 2018 and UK GDPR. Information shared is confidential and will not be disclosed without your consent, unless legally required.</p>
+  <p>Records are kept securely, following professional standards. Breaches outside legal exceptions are unlawful. Clients are informed of these limits upfront, especially minors and vulnerable adults.</p>
+  <p>My goal is to provide a safe, confidential environment while respecting your privacy and legal duties to protect life and wellbeing.</p>
 </section>
 
 </main>
@@ -303,4 +306,4 @@ footer {
   </div>
 </footer>
 </body>
-<HTML>
+</html>
