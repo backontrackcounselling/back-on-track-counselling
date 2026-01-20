@@ -9,194 +9,189 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
   <style>
-    /* Reset and box sizing */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Lora', serif;
-  background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'); /* placeholder, replace with your vine background URL */
-  background-repeat: no-repeat; /* no tiling, use only one image */
-  background-size: cover; /* scales the image to cover entire background */
-  background-position: center; /* centers the image */
-  background-attachment: fixed; /* optional: makes background stay fixed when scrolling */
+    /* Reset and box-sizing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+/* Body with calming pale blue gradient background, smooth font, and comfortable line height */
+body {
+  font-family: 'Lora', serif;
+  background: linear-gradient(135deg, #d0eafc, #ffffff); /* gentle blue gradient */
+  color: #222; /* dark enough for readability */
+  line-height: 1.6;
+  padding: 20px;
+}
 
-    /* Container for content */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, 0.9); /* semi-transparent overlay for readability */
-      border-radius: 15px;
-    }
+/* Container for main content, centered with padding and semi-opaque overlay for readability */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95); /* subtle overlay for readability */
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
 
-    /* Header styles */
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
+/* Header styles with flex layout for logo and title */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.header-title {
+  font-family: 'Anton', sans-serif;
+  font-size: 3em;
+  color: #243746;
+  margin-left: 15px;
+}
+.tagline {
+  font-size: 1.2em;
+  margin-top: 10px;
+  max-width: 800px;
+  margin-left: 15px;
+  font-weight: normal;
+  color: #444;
+}
 
-    .logo {
-      width: 80px; /* reasonable size for logo */
-      height: auto;
-      margin-right: 20px;
-    }
+/* Logo styling */
+.logo {
+  width: 100px;
+  height: auto;
+}
 
-    .header-title {
-      font-family: 'Anton', sans-serif;
-      font-size: 3em;
-      color: #243746;
-    }
+/* Navigation styling with gentle hover effects */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+nav a {
+  padding: 12px 20px;
+  border: 2px solid #ffd700;
+  border-radius: 12px;
+  background-color: rgba(255, 215, 0, 0.2);
+  text-decoration: none;
+  font-weight: bold;
+  color: #243746;
+  transition: all 0.3s ease;
+}
+nav a:hover {
+  background-color: #ffe082;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
 
-    .tagline {
-      font-size: 1.2em;
-      margin-top: 10px;
-      font-weight: normal;
-    }
+/* Main content styling */
+main {
+  padding: 20px;
+}
 
-    /* Navigation styles */
-    nav {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 30px;
-    }
+/* Sections with pale yellow background, rounded corners, subtle shadow for comfy look */
+section {
+  background-color: #fff9c4; /* Pale yellow */
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 2px solid #ffd700; /* gold border for contrast */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+section:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+section h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2.2em;
+  margin-bottom: 15px;
+  color: #243746;
+}
+section p, section ul, section ol {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #333;
+}
 
-    nav a {
-      padding: 10px 15px;
-      border: 3px solid #ffd700;
-      border-radius: 12px;
-      text-decoration: none;
-      color: #243746;
-      font-weight: bold;
-      transition: 0.3s;
-      background-color: rgba(255, 215, 0, 0.2);
-    }
+/* About Me Image styling */
+#about {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+#about img {
+  width: 180px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
-    nav a:hover {
-      background-color: #b2dfdb;
-    }
+/* Support words with hover tooltip effect */
+.support-word {
+  cursor: help;
+  border-bottom: 1px dotted #666;
+  transition: color 0.3s;
+}
+.support-word:hover {
+  color: #00796b;
+  font-weight: bold;
+}
 
-    /* Main styles */
-    main {
-      padding: 20px;
-    }
+/* Form styles for clarity and comfort */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input[type="text"], input[type="email"], input[type="tel"], textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-family: 'Lora', serif;
+  font-size: 1em;
+}
+button {
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button:hover {
+  background-color: #45a049;
+}
 
-    /* Sections styling */
-    section {
-      border: 3px solid #ffd700;
-      border-radius: 20px;
-      padding: 25px;
-      margin-bottom: 40px;
-      background-color: rgba(255, 255, 255, 0.8);
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
+/* Footer styles with soft background and centered text */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(217, 237, 245, 0.9);
+  border-top: 2px solid #ccc;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 0.95em;
+  color: #555;
+}
 
-    section h2 {
-      font-family: 'Anton', sans-serif;
-      font-size: 2em;
-      margin-bottom: 15px;
-      color: #243746;
-    }
-
-    /* About Me image style */
-    #about {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    #about img {
-      width: 200px;
-      border-radius: 10px;
-      object-fit: cover;
-    }
-
-    /* Form styles */
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-
-    label {
-      font-weight: bold;
-    }
-
-    input, textarea {
-      padding: 10px;
-      border-radius: 8px;
-      border: 1px solid #ccc;
-      font-family: 'Lora', serif;
-    }
-
-    button {
-      padding: 15px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1em;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-
-    /* Footer styles */
-    footer {
-      margin-top: 40px;
-      padding: 20px;
-      text-align: center;
-      background-color: rgba(217, 237, 245, 0.9);
-      border-top: 2px solid #000;
-      border-radius: 10px;
-    }
-
-    /* Special offer box */
-    .fixed-price-section {
-      background-color: #ffd700;
-      border: 3px solid #FF0000;
-      border-radius: 15px;
-      padding: 20px;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      text-align: center;
-    }
-
-    .fixed-price-section h2 {
-      font-family: 'Anton', sans-serif;
-      font-size: 3em;
-      margin-bottom: 15px;
-      color: #243746;
-    }
-
-    .fixed-price-section p {
-      font-size: 1.3em;
-      margin-bottom: 20px;
-      color: #243746;
-    }
-
-    /* Supporting words hover effect */
-    .support-word {
-      cursor: help;
-      border-bottom: 1px dotted #666;
-    }
-
-    .support-word:hover {
-      color: #00796b;
-      font-weight: bold;
-    }
+/* Optional: smooth transitions for all elements for a gentle feel */
+* {
+  transition: all 0.3s ease;
+}
 
   </style>
 </head>
