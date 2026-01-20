@@ -9,34 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora&display=swap" rel="stylesheet">
 
   <style>
-/* Style for the fixed price special offer section */
-.fixed-price-section {
-  background-color: #ffd700; /* Gold/yellow background */
-  border: 3px solid #FF0000; /* Black border for emphasis */
-  border-radius: 15px;
-  padding: 20px;
-  margin-bottom: 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  text-align: center;
-}
-
-.fixed-price-section h2 {
-  font-family: 'Anton', sans-serif;
-  font-size: 3em;
-  margin-bottom: 15px;
-  color: #243746;
-}
-
-.fixed-price-section p {
-  font-size: 1.3em;
-  margin-bottom: 20px;
-  color: #243746;
-}
-
-.fixed-price-section .highlight {
-  font-size: 1.2em;
-  font-weight: bold;
-}
+    /* Reset and box sizing */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -45,34 +18,50 @@
 
     body {
       font-family: 'Lora', serif;
-      background-color: #7a9baf;
+      background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80'); /* placeholder, replace with your vine background URL */
+      background-repeat: repeat;
+      background-size: cover;
+      background-attachment: fixed;
       color: #243746;
       line-height: 1.6;
     }
 
+    /* Container for content */
     .container {
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* semi-transparent overlay for readability */
+      border-radius: 15px;
     }
 
+    /* Header styles */
     header {
-      text-align: center;
-      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      width: 80px; /* reasonable size for logo */
+      height: auto;
+      margin-right: 20px;
     }
 
     .header-title {
-  font-family: 'Anton', sans-serif;
-  font-size: 60px; /* Make it significantly larger */
-  color: #000;
-  margin-bottom: 10px;
-}
+      font-family: 'Anton', sans-serif;
+      font-size: 3em;
+      color: #243746;
     }
 
     .tagline {
-      font-size: 18;
+      font-size: 1.2em;
+      margin-top: 10px;
+      font-weight: normal;
     }
 
+    /* Navigation styles */
     nav {
       display: flex;
       justify-content: center;
@@ -89,58 +78,50 @@
       color: #243746;
       font-weight: bold;
       transition: 0.3s;
+      background-color: rgba(255, 215, 0, 0.2);
     }
 
     nav a:hover {
       background-color: #b2dfdb;
     }
 
+    /* Main styles */
     main {
-      background-color: #fffde7;
-      padding: 30px;
-      border-radius: 20px;
+      padding: 20px;
     }
 
+    /* Sections styling */
     section {
       border: 3px solid #ffd700;
       border-radius: 20px;
       padding: 25px;
       margin-bottom: 40px;
-      background-color: #fffde7;
+      background-color: rgba(255, 255, 255, 0.8);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    section:hover {
-      border-color: green;
-    }
-
-    h2 {
+    section h2 {
       font-family: 'Anton', sans-serif;
       font-size: 2em;
       margin-bottom: 15px;
+      color: #243746;
     }
 
-    h3 {
-      margin-top: 20px;
-      margin-bottom: 10px;
+    /* About Me image style */
+    #about {
+      display: flex;
+      align-items: center;
+      gap: 20px;
     }
 
-    ul, ol {
-      margin-left: 20px;
-      margin-bottom: 10px;
+    #about img {
+      width: 200px;
+      border-radius: 10px;
+      object-fit: cover;
     }
 
-    .support-word {
-      cursor: help;
-      border-bottom: 1px dotted #666;
-    }
-
-    .support-word:hover {
-      color: #00796b;
-      font-weight: bold;
-    }
-
+    /* Form styles */
     form {
-      margin-top: 20px;
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -150,7 +131,7 @@
       font-weight: bold;
     }
 
-    input, textarea, select {
+    input, textarea {
       padding: 10px;
       border-radius: 8px;
       border: 1px solid #ccc;
@@ -165,41 +146,78 @@
       border-radius: 8px;
       font-size: 1em;
       cursor: pointer;
+      margin-top: 10px;
     }
 
     button:hover {
       background-color: #45a049;
     }
 
-    .price {
-      font-family: 'Anton', sans-serif;
-      font-size: 1.5em;
-      display: inline-block;
-      margin-top: 10px;
-    }
-
+    /* Footer styles */
     footer {
       margin-top: 40px;
       padding: 20px;
       text-align: center;
-      background-color: #d9edf5;
+      background-color: rgba(217, 237, 245, 0.9);
       border-top: 2px solid #000;
+      border-radius: 10px;
     }
+
+    /* Special offer box */
+    .fixed-price-section {
+      background-color: #ffd700;
+      border: 3px solid #FF0000;
+      border-radius: 15px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    .fixed-price-section h2 {
+      font-family: 'Anton', sans-serif;
+      font-size: 3em;
+      margin-bottom: 15px;
+      color: #243746;
+    }
+
+    .fixed-price-section p {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      color: #243746;
+    }
+
+    /* Supporting words hover effect */
+    .support-word {
+      cursor: help;
+      border-bottom: 1px dotted #666;
+    }
+
+    .support-word:hover {
+      color: #00796b;
+      font-weight: bold;
+    }
+
   </style>
 </head>
-
 <body>
   <div class="container">
-    <h1>
+    <!-- Header with logo and title -->
     <header>
-      <h1 class="header-title">Back on Track Counselling</h1>
-      <p class="tagline"><strong>A warm, supportive space guiding you back to balance and wellbeing.</strong></p>
+      <img src="logo.png" alt="Logo" class="logo" />
+      <div>
+        <h1 class="header-title">Back on Track Counselling</h1>
+        <p class="tagline"><strong>A warm, supportive space guiding you back to balance and wellbeing.</strong></p>
+      </div>
     </header>
- <section class="fixed-price-section">
-  <h2>Only £25 per Session!</h2>
-  <p class="highlight">A 50-minute session — just <strong>£25!</strong> For people who seek affordable help in the <strong>North West region or worldwide.</strong> 
-    I understand how difficult it can be to access support, and I know how hard it is to get help through traditional services, which can take time. Sometimes, you need instant support — that's why I offer this affordable, fixed rate to provide quick and accessible help when you need it most.</p>
-</section>
+
+    <!-- Special offer -->
+    <section class="fixed-price-section">
+      <h2>Only £25 per Session!</h2>
+      <p class="highlight">A 50-minute session — just <strong>£25!</strong> For people who seek affordable help in the <strong>North West region or worldwide.</strong></p>
+    </section>
+
+    <!-- Navigation menu -->
     <nav>
       <a href="#about">About</a>
       <a href="#support">Support</a>
@@ -207,40 +225,42 @@
       <a href="#privacy">Privacy</a>
     </nav>
 
+    <!-- Main content -->
     <main>
 
+      <!-- About Me -->
       <section id="about">
         <h2>About Me</h2>
-        <p>
-        My name is <strong>Janine Blake</strong>, and I am the founder of Back on Track Counselling. I am a registered member of the <strong>British Association for Counselling and Psychotherapy(MBACP)</strong> and work in line with their ethical framework to provide safe, professional, and confidential counselling.
-I understand that reaching out for support can feel daunting, especially when you are feeling overwhelmed, stuck, or unsure where to begin. You do not need to have everything worked out before starting—counselling offers a space to explore what is going on for you, at a pace that feels right.
-I offer a warm, compassionate, and non-judgemental environment where you can talk openly and be met with empathy and understanding. Whether you are experiencing anxiety, low mood, stress, relationship difficulties, or feeling disconnected from yourself, our work will be centred around your individual needs.
-<strong>At Back on Track Counselling, my aim is to help you feel heard, supported, and empowered to reconnect with your strengths and move forward feeling more grounded and back on track.</strong>
-        </p>
+        <div>
+          <img src="janine-picture.jpg" alt="Janine Blake">
+          <p>
+            My name is <strong>Janine Blake</strong>, and I am the founder of Back on Track Counselling. I am a registered member of the <strong>British Association for Counselling and Psychotherapy (MBACP)</strong> and work in line with their ethical framework to provide safe, professional, and confidential counselling.
+            I understand that reaching out for support can feel daunting, especially when you are feeling overwhelmed, stuck, or unsure where to begin. You do not need to have everything worked out before starting—counselling offers a space to explore what is going on for you, at a pace that feels right.
+            I offer a warm, compassionate, and non-judgemental environment where you can talk openly and be met with empathy and understanding. Whether you are experiencing anxiety, low mood, stress, relationship difficulties, or feeling disconnected from yourself, our work will be centred around your individual needs.
+            <strong>At Back on Track Counselling, my aim is to help you feel heard, supported, and empowered to reconnect with your strengths and move forward feeling more grounded and back on track.</strong>
+          </p>
+        </div>
       </section>
-      
-            <section id="contact">
+
+      <!-- Contact & Self Referral -->
+      <section id="contact">
         <h2>Contact & Self Referral</h2>
         <p><strong>Email:</strong> <a href="mailto:Janinejlb88@outlook.com">Janinejlb88@outlook.com</a></p>
         <p><strong>Phone:</strong> 07514 117848</p>
-
         <form action="https://formspree.io/f/xeeeoeqo" method="POST">
           <label>Full Name</label>
           <input type="text" name="name" required>
-
           <label>Email</label>
           <input type="email" name="email" required>
-
           <label>Phone</label>
           <input type="tel" name="phone">
-
           <label>How can I help?</label>
           <textarea name="message" rows="4" required></textarea>
-
           <button type="submit">Submit</button>
         </form>
       </section>
 
+      <!-- Support & Therapies -->
       <section id="support">
         <h2>Support & Therapies</h2>
         <ul>
@@ -252,7 +272,6 @@ I offer a warm, compassionate, and non-judgemental environment where you can tal
           <li><span class="support-word" title="Stroke recovery involves regaining movement, skills, and independence through therapy and support. It varies based on stroke severity and includes physical, speech, and emotional therapy.">Stroke recovery</span></li>
           <li><span class="support-word" title="Aphasia is a language disorder caused by brain injury, affecting speech, understanding, reading, or writing. .">Aphasia</span></li>
         </ul>
-
         <h3>Therapeutic Approaches</h3>
         <ul>
           <li><span class="support-word" title="Person-Centred Therapy is a supportive approach that helps individuals explore their feelings in a safe, non-judgmental environment. It focuses on empathy, acceptance, and trust to promote self-awareness, growth, and confidence.">Person-Centred Therapy</span></li>
@@ -261,6 +280,7 @@ I offer a warm, compassionate, and non-judgemental environment where you can tal
         </ul>
       </section>
 
+      <!-- How Counselling Works -->
       <section id="experience">
         <h2>How Counselling Works</h2>
         <ol>
@@ -270,22 +290,23 @@ I offer a warm, compassionate, and non-judgemental environment where you can tal
         </ol>
       </section>
 
+      <!-- Privacy & Confidentiality -->
       <section id="privacy">
-  <h2>Privacy & Confidentiality</h2>
-  <p>
-    All counselling sessions are strictly confidential, ensuring your privacy and trust. We comply fully with UK GDPR and the Data Protection Act 2018, which means your personal information is handled securely and responsibly. Your data will only be used for the purpose of your counselling and will not be shared without your explicit consent.
-  </p>
-  <p>
-    Information may only be shared if there is a legal obligation, such as to protect life or prevent serious harm. In such cases, we follow legal and ethical guidelines to ensure your safety and the safety of others. You have the right to access your data, request corrections, and understand how your information is used. Your confidentiality is our priority, and we aim to create a safe, respectful space for your personal growth.
-  </p>
-</section>
+        <h2>Privacy & Confidentiality</h2>
+        <p>
+          All counselling sessions are strictly confidential, ensuring your privacy and trust. We comply fully with UK GDPR and the Data Protection Act 2018, which means your personal information is handled securely and responsibly. Your data will only be used for the purpose of your counselling and will not be shared without your explicit consent.
+        </p>
+        <p>
+          Information may only be shared if there is a legal obligation, such as to protect life or prevent serious harm. In such cases, we follow legal and ethical guidelines to ensure your safety and the safety of others. You have the right to access your data, request corrections, and understand how your information is used. Your confidentiality is our priority, and we aim to create a safe, respectful space for your personal growth.
+        </p>
+      </section>
 
     </main>
 
+    <!-- Footer -->
     <footer>
       <p>&copy; 2026 Back on Track Counselling | MBACP Registered</p>
     </footer>
-
   </div>
 </body>
 </html>
